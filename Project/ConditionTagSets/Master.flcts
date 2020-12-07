@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet>
+  <ConditionTag
+    BackgroundColor="#bd81f6"
+    Name="Build-External"
+    Comment=""
+    OriginalName="Build-External" />
+  <ConditionTag
+    BackgroundColor="#0000ff"
+    Name="Build-Embedded"
+    Comment=""
+    OriginalName="Build-Embedded" />
+  <ConditionTag
+    Comment=""
+    Name="PDF"
+    BackgroundColor="Red" />
+  <ConditionTag
+    BackgroundColor="#98fb98"
+    Name="Online"
+    Comment=""
+    Color="Normal"
+    OriginalName="Online" />
+  <ConditionTag
+    BackgroundColor="#ff00e4"
+    Name="Hidden"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#00fbff"
+    Name="Control"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#fff300"
+    Name="Command"
+    Comment="" />
+</CatapultConditionTagSet>

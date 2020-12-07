@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta charset="utf-8" />
+        <meta name="description" content="Keyfactor Documentation" />
+        <meta name="author" content="Keyfactor" /><title>Keyfactor</title>
+        <link href="../Stylesheets/glyphicons.css" rel="stylesheet" type="text/css" />
+        <link href="../Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <link href="../Stylesheets/GlobalStyles.css" rel="stylesheet" type="text/css" />
+        <link href="../Stylesheets/GlobalFooterStyles.css" rel="stylesheet" type="text/css" />
+        <link href="../Stylesheets/Fixes_Root.css" rel="stylesheet" type="text/css" />
+        <link href="../Stylesheets/HomePageStyles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="contentBody" class="off-canvas-main">
+            <MadCap:bodyProxy />
+            <MadCap:snippetBlock src="../Snippets/Footer.flsnp" />
+        </div>
+    </body>
+</html>

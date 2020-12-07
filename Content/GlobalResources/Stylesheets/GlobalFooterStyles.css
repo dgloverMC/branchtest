@@ -1,0 +1,374 @@
+﻿/*<meta />*/
+
+/* Footer styles used in Footer snippet. Must attach this sheet in the footer snippet file properties AND the masterpage properties for every master page on which the footer appears. E.g. HomePage and OtherTopics */
+
+div.footer
+{
+	border-top: 1px solid #dddddd;
+	background-color: #ffffff;
+	padding: 1.777em 0 1.777em 0;
+	margin: -50px 0 0 0;
+	/* move up to offset header logo being moved up the page. If the offset is removed, there's a big gap between the content div and the footer div. However, this messes up the home page layout, so reset to 0 in HomePageStyles.css */
+	color: #3c3c3c;
+	display: block;
+	list-style-image: none;
+	list-style-type: none;
+	clear: both;
+	text-align: left;
+	vertical-align: top;
+	line-height: 1.333em;
+}
+
+div.footer > div.outer-row
+{
+	padding: 0;
+}
+
+div.footer h2
+{
+	color: #8a8a8a;
+	font-family: 'Rajdhani SemiBold', Corbel, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: .70em;
+	margin: 0 1.333em 0.563em 0;
+	padding: 0;
+}
+
+div.footer p
+{
+	color: #8a8a8a;
+	font-size: .70em;
+	font-family: 'Proxima Nova', Corbel, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	line-height: 1.333em;
+	margin-top: 0;
+}
+
+div.footer a
+{
+	text-decoration: none;
+	color: #3c3c3c;
+	font-size: 0.90em;
+	font-family: 'Rajdhani SemiBold', Corbel, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+div.footer a:hover
+{
+	color: #8a8a8a;
+	font-size: 0.90em;
+	font-family: 'Rajdhani SemiBold', Corbel, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	text-decoration: none;
+}
+
+div.footer a.second
+{
+	font-size: 1.1em;
+	font-family: 'Proxima Nova', Corbel, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+div.footer a.second:hover
+{
+	color: #8a8a8a;
+	font-size: 1.1em;
+	font-family: 'Proxima Nova', Corbel, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+div.footer ul
+{
+	list-style-image: none;
+	list-style-type: none;
+	margin: 0 1.333em 0 0;
+	padding: 0;
+}
+
+div.footer li
+{
+	font-size: 1em;
+	line-height: 1.333em;
+	margin: 0 0 0.563em 0;
+}
+
+.footer-logo
+{
+	max-width: 100%;
+	padding: 0.422em 0px 1em 0px;
+}
+
+div.footer ul.social
+{
+	margin: 0px;
+	padding: 0px;
+	clear: both;
+	display: block;
+}
+
+div.subfooter
+{
+	background-color: #ffffff;
+	padding: 1.777em 0 1.777em 0;
+	/* margin: -50px 0 0 0;
+	move up to offset header logo being moved up the page. If the offset is removed, there's a big gap between the content div and the footer div. However, this messes up the home page layout, so reset to 0 in HomePageStyles.css */
+	color: #3c3c3c;
+	display: block;
+	list-style-image: none;
+	list-style-type: none;
+	clear: both;
+	text-align: center;
+	vertical-align: top;
+	line-height: 1.333em;
+}
+
+div.subfooter ul.social
+{
+	margin: 0px;
+	padding: 0px;
+	clear: both;
+	display: block;
+}
+
+ul.social li
+{
+	display: inline-block;
+	/* border-radius: 7px; Comment out rounding on social media icons */
+	height: 3.157em;
+	width: 3.157em;
+	padding: 0;
+	margin-right: 0.36em;
+}
+
+ul.social > li:nth-child(3)
+{
+	margin-right: 0;
+}
+
+ul.social li a
+{
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-indent: -9999px;
+}
+
+li.facebook
+{
+	/* was: background-image: url('../Images/facebook_icon.svg');*/
+	background-image: url('../Images/facebook-darkgray-50.jpg');
+	background-repeat: no-repeat;
+	background-color: #ffffff; /* was 3d5b95 */
+	background-position: center bottom;
+}
+
+li.twitter
+{
+	/* was: background-image: url('../Images/twitter_icon.svg');*/
+	background-image: url('../Images/twitter-darkgray-50.jpg');
+	background-repeat: no-repeat;
+	background-color: #ffffff; /* was 34aadd */
+	background-position: center center;
+}
+
+li.linkedin
+{
+	/* was: background-image: url('../Images/linkedin_icon.svg');*/
+	background-image: url('../Images/linkedin-darkgray-50.jpg');
+	background-repeat: no-repeat;
+	background-color: #ffffff; /* was 127bb3 */
+	background-position: center center;
+}
+
+li.youtube
+{
+	background-image: url('../Images/youtube-darkgray-50.jpg');
+	background-repeat: no-repeat;
+	background-color: #ffffff;
+	background-position: center center;
+}
+
+ul.social:after
+{
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+div.subfooter a
+{
+	text-decoration: none;
+	color: #636363;
+}
+
+div.subfooter a:hover
+{
+	color: #636363;
+	text-decoration: none;
+}
+
+hr.background-divider
+/* Can't get this working for some reason */
+{
+	position:absolute;
+	width:100%;
+	z-index:-1;
+	margin-top:0;
+	margin-bottom:0;
+	top:50%;
+	transform:translateY(-50%)
+}
+
+p.Copyright
+{
+	font-size: 0.6em;
+	text-align: center;
+	color: #636363;
+	margin: 0 0 0.6em 0;
+}
+
+/* HomeMasterPageFooter layout; used in footer snippet. Note this is the default name but applies to all topics where snippet is used, not just the home page. */
+
+div.HomeMasterPageFooter	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 1.333em;
+}
+
+div.HomeMasterPageFooter > div.columns
+{
+	padding: 0;
+}
+
+div.HomeMasterPageFooter::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.HomeMasterPageFooter::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.HomeMasterPageFooter > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Percentages for column numbers should add up to 97 to allow for 3% margin. */
+
+div.HomeMasterPageFooter > div:nth-child(1)
+{
+	width: 16%;
+	/* margin-right: 3%; */
+	margin-left: 0;
+	/* text-align: center; */
+}
+
+div.HomeMasterPageFooter > div:nth-child(2)
+{
+	width: 16%;
+	margin: 0%;
+}
+
+div.HomeMasterPageFooter > div:nth-child(3)
+{
+	width: 16%;
+	margin: 0%;
+}
+
+div.HomeMasterPageFooter > div:nth-child(3) > ul
+{
+	margin-right: 0px;
+}
+
+div.HomeMasterPageFooter > div:nth-child(4)
+{
+	width: 16%;
+	margin: 0%;
+}
+
+div.HomeMasterPageFooter > div:nth-child(4) > ul
+{
+	margin-right: 0px;
+}
+
+div.HomeMasterPageFooter > div:nth-child(5)
+{
+	width: 16%;
+	margin: 0%;
+}
+
+div.HomeMasterPageFooter > div:nth-child(5) > ul
+{
+	margin-right: 0px;
+}
+
+div.HomeMasterPageFooter > div:nth-child(6)
+{
+	width: 17%;
+	margin: 0%;
+}
+
+/*
+div.HomeMasterPageFooter > div:nth-child(7)
+{
+	width: 17%;
+	margin:0%;
+}
+*/
+
+/* Medium Layout */
+
+@media tablet
+{
+	div.footer
+	{
+		padding-top: 1.333em;
+		padding-bottom: 1.333em;
+	}
+}
+
+/* Small Layout */
+
+@media mobile
+{
+	div.HomeMasterPageFooter > div:nth-child(1)
+	{
+		width: 100%;
+	}
+
+	div.HomeMasterPageFooter > div:nth-child(2)
+	{
+		width: 100%;
+	}
+
+	div.HomeMasterPageFooter > div:nth-child(3)
+	{
+		width: 100%;
+	}
+
+	div.HomeMasterPageFooter > div:nth-child(4)
+	{
+		width: 100%;
+	}
+
+	div.HomeMasterPageFooter > div:nth-child(5)
+	{
+		width: 100%;
+	}
+
+	div.footer h2
+	{
+		margin: 1.333em 1.333em 0.563em 0;
+	}
+}

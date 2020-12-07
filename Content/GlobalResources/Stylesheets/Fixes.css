@@ -1,0 +1,506 @@
+﻿/*<meta />*/
+
+/* For styles used to fix/tweak navigation, layout, and design elements. These styles should not be shown to the user in the Flare Styles pane. To make it easier to use the WSIWYG XML editor to format a topic, by not cluttering that list with the styles in this stylesheet.
+SEE MORE NOTES in GlobalStyles.css
+
+Blue for interactive elements: #28bcf4 from CSS website
+Dark blue for hover state: #23527c from CSS website
+Light gray for visited state: #b2b2b2 from certsol -- also used for topbar navigation shadow
+Main gray for text and headings: #444444 from CSS website
+light gray background: #f9f9f9 from CSS website
+light gray border for screenshot thumbnails: #f9f9f9 from CSS website
+light gray border around sidemenu elements: #dddddd from certsol
+ */
+
+/* General formatting */
+
+body
+{
+	font-family: Corbel, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	/* was Arial, Myriad, sans-serif */
+	font-size: 100%;
+	/* 16px base unit */
+	line-height: 1.333em;
+	/* was 1.5em */
+	color: #444444;
+	/* was 636363*/
+	background-color: #ffffff;
+	mc-hyphenate: never;
+}
+
+.main-section > .outer-row
+{
+	padding-top: 0;
+}
+
+.center
+{
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	float: none !important;
+	text-align: center;
+}
+
+table tr:first-of-type
+{
+	/*border-top-left-radius: 4px;
+border-top-right-radius: 4px; */
+}
+
+/* Breadcrumbs -- overrides styles generated from MainStyles.css during build in Flare, not the styles in the output MainStyles.css file */
+
+a.MCBreadcrumbsLink
+{
+	text-decoration: none;
+	color: #ffffff;
+	font-style: normal;
+}
+
+a.MCBreadcrumbsLink:visited
+{
+	color: inherit;
+}
+
+a.MCBreadcrumbsLink:hover
+{
+	text-decoration: underline;
+	color: #ffffff;
+}
+
+MadCap|breadcrumbsProxy
+{
+	font-size: 0.8em;
+	font-style: italic;
+	font-weight: normal;
+	color: #ffffff;
+	display: inline-block;
+	mc-breadcrumbs-prefix: "";
+	mc-breadcrumbs-divider: ' » ';
+	/* the spaces around the chevron are Unicode en-spaces copied from windows Character Map */
+	mc-breadcrumbs-count: 5;
+	border: solid 1px #28b905;
+	/* was 0069ba */
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	background-color: #28b905;
+	/* was 0069ba */
+	margin-bottom: 1em;
+	padding: 0.422em 1em 0.422em 1em;
+	width: auto;
+	float: left;
+}
+
+span.MCBreadcrumbsDivider
+{
+	font-style: normal;
+	opacity: 0.7;
+	vertical-align: 1px;
+}
+
+/* Topbar (Navigation) Dropdown Styles -- overrides styles generated in "../../Skins/Fluid/Stylesheets/Styles.css". You can't set these using Flare properties or dialogs, like in skin settings, or using any "MadCap" styles that determine generated output. You can only access these generated styles after the fact (Styles.css is generated and not directly editable) and override them. */
+
+.navigation-wrapper
+{
+	flex-basis: auto;
+}
+
+ul.navigation
+{
+	margin-left: 200pt;
+	margin-right: 0;
+	padding-right: 0;
+	z-index: 1000; 
+	/* needed so drop-down will always appear in front of side menu */
+}
+
+ul.navigation ul
+{
+	/*z-index: 1000;
+	width: auto;
+	margin: 0; */
+	padding: 0;
+	/*was 10 0 10 0*/
+	box-shadow: 0px 3px 6px #b2b2b2;
+	/*position: absolute;
+	color: #636363;
+	font-size: 15px;
+	background-color: #f7f3f7;
+*/
+}
+
+/*
+
+ul.navigation > li > ul
+{
+	left: auto;
+	right: 0;
+}
+*/
+
+ul.navigation > li.has-children:after
+{
+	content: ' ';
+	display: block;
+	position: absolute;
+	height: 0;
+	width: 0;
+	border: 0px solid #d72fc1;
+	/* was 8 px transparent */
+	bottom: 0;
+	left: 50%;
+	margin-left: -8px;
+	margin-top: -8px;
+}
+
+/* 
+ul.navigation ul,
+ul.navigation > li.has-children:after
+{
+	-webkit-transition: all 100ms ease-in;
+	-moz-transition: all 100ms ease-in;
+	-ms-transition: all 100ms ease-in;
+	-o-transition: all 100ms ease-in;
+	transition: all 100ms ease-in;
+	visibility: hidden;
+	opacity: 0;
+}
+
+ul.navigation ul ul
+{
+	top: 0;
+	left: 100%;
+	color: #636363;
+	font-size: 15px;
+	background-color: #f7f3f7;
+}
+
+ul.navigation ul ul.openLeft
+{
+	left: auto;
+	right: 100%;
+}
+
+ul.navigation ul ul.openRight
+{
+	right: auto;
+	left: 100%;
+}
+
+ul.navigation a
+{
+	text-decoration: none;
+	height: 100%;
+	outline: none;
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: normal;
+}
+
+ul.navigation li
+{
+	position: relative;
+	list-style: none;
+	margin: 0;
+	height: 100%;
+}
+
+ul.navigation li > a
+{
+	display: block;
+	line-height: 3em;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+ul.navigation li li
+{
+	padding: 0 10px;
+}
+
+ul.navigation > li
+{
+	position: relative;
+	float: left;
+	display: block;
+}
+
+ul.navigation li:hover > ul,
+ul.navigation > li.has-children:hover:after
+{
+	visibility: visible;
+	opacity: 1;
+}
+
+
+ul.navigation li:hover
+{
+	background-color: transparent; 
+}
+ */
+
+ul.navigation ul > li
+{
+	line-height: 1.777em;
+	border-top: 1px solid #d6d7d6;
+	/*added */
+}
+
+ul.navigation ul > li:nth-child(1)
+{
+	/* added */
+	border-top: 0;
+}
+
+/*
+ul.navigation ul > li > a
+{
+	padding: 0 15px;
+	text-align: left;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	line-height: 1.15em;
+}
+
+ul.navigation ul > li:hover
+{
+	background-color: #d6d7d6;
+}*/
+
+/*
+.nav-search .row .outer-row {
+	padding-right:0;
+	text-align: right;
+	float: right;
+	width: auto;
+	border: 1px solid #f3987f;
+}
+
+*/
+
+nav.tab-bar
+{
+	border-bottom: 3px solid #28b905;
+	/* was 0069ba */
+}
+
+.search,
+.search-bar
+{
+	text-align: right;
+	margin: 0 0 0 auto;
+	padding: 0;
+}
+
+div.topic-lemur-logo
+{
+	display: inline-block;
+	position: relative;
+	/* Adjusted top from -85 to -87 to keep logo from affecting search box in small browser sessions - SLD */
+	top: -87px;
+	background-color: transparent;
+}
+
+div.topic-lemur-logo div.nav-wrapper
+{
+	/*margin-left: -60px;*/
+}
+
+div.topic-lemur-logo a
+{
+	text-decoration: none;
+}
+
+span.nav-text
+{
+	color: #7D0F6E;
+	margin-left: 3px;
+	margin-right: 6px;
+	vertical-align: middle;
+}
+
+div.topic-lemur-logo span.glyphicons
+{
+	color: #7D0F6E;
+}
+
+div.topic-lemur-logo span.nav-div
+{
+	color: #7D0F6E;
+	margin-left: 3px;
+	margin-right: 0px;
+}
+
+div#contentBody
+{
+	/* float:right; */
+	position: relative;
+	top: -74px;
+	padding-bottom: 1.33em;
+	/*new */
+}
+
+/* side menu */
+
+ul.menu._Skins_SideMenu.mc-component ul.sub-menu li a,
+ul.menu._Skins_SideMenu.mc-component ul.sub-menu li a.selected,
+ul.menu._Skins_SideMenu.mc-component ul.sub-menu li a.selected:hover
+{
+	background-image: url('../Images/sidemenu-sub-li-bg.png');
+	background-repeat: no-repeat;
+}
+
+ul.menu._Skins_SideMenu.mc-component ul.sub-menu li.tree-node-leaf a,
+ul.menu._Skins_SideMenu.mc-component ul.sub-menu li.tree-node-leaf a.selected,
+ul.menu._Skins_SideMenu.mc-component ul.sub-menu li.tree-node-leaf a.selected:hover
+{
+	background-image: none;
+}
+
+/* ------------------ misc tweaks and overrides ----------------- */
+
+div.glossary div.term,
+div.glossary div.definition
+{
+	line-height: 1.33em;
+}
+
+div.url span.cite
+{
+	visibility: hidden;
+	display: none;
+}
+
+div.nav-wrapper
+{
+	vertical-align: middle;
+}
+
+/* Medium Layout */
+
+@media tablet
+{
+	.search-bar
+	{
+		width: 60%;
+	}
+
+	.main-section
+	{
+		margin-left: 205px;
+	}
+
+	/*	.sideNav 
+	{
+		display: none; 
+	
+		width: 200px;
+	}	*/
+}
+
+/* Small Layout */
+
+@media mobile
+{
+	.search-bar
+	{
+		width: 60%;
+	}
+
+	.HideShow
+	{
+		display: none;
+	}
+
+	.sideNav
+	{
+		display: none;
+	}
+
+	.main-section
+	{
+		margin-left: 1px;
+	}
+}
+
+/* Print Layout */
+
+@media print
+{
+	/*	a.MCPopupThumbnailLink, a.MCPopupThumbnailPopup, img.imgscreenshot
+	{
+		display: none;
+		visible: hidden;
+	}
+*/
+
+	img.print-img
+	{
+		display: block;
+		visible: visible;
+		max-width: 95%;
+		margin: 0;
+		padding: 0;
+		page-break-inside: avoid;
+	}
+
+	div.footer.center,
+	div.MCBreadcrumbsBox_0
+	{
+		display: none;
+		visible: hidden;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6
+	{
+		page-break-after: avoid;
+		page-break-inside: avoid;
+	}
+
+	h1
+	{
+		margin-top: 0;
+	}
+
+	blockquote,
+	table,
+	pre,
+	div.note,
+	img
+	{
+		page-break-inside: avoid;
+	}
+
+	ul,
+	ol,
+	dl
+	{
+		page-break-before: avoid;
+	}
+
+	p.Copyright
+	{
+		margin: 0;
+		padding: 0;
+		position: relative;
+		top: -50px;
+	}
+
+	.sideNav
+	{
+		display: none;
+	}
+}

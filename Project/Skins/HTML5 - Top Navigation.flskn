@@ -1,0 +1,636 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultSkin
+  Version="3"
+  SkinType="WebHelp2"
+  ComponentType="MasterPage"
+  TemplateName="Fluid"
+  Comment="HTML5 Fluid Layout"
+  EnableResponsiveOutput="true"
+  RemoveImagesOnSave="true"
+  LogoUrl="Content/Topics/Introduction.htm"
+  CommentsInTopic="false"
+  DisplayCommunitySearchResults="false">
+  <Stylesheet>
+    <Resources></Resources>
+    <Styles>
+      <Medium
+        Name="Tablet">
+        <Style
+          Name="Navigation Slide Out Button">
+          <Properties></Properties>
+        </Style>
+        <Style
+          Name="Navigation Panel">
+          <Properties></Properties>
+        </Style>
+        <Style
+          Name="Navigation Panel Item">
+          <Properties>
+            <Property
+              Name="LineHeight">1</Property>
+          </Properties>
+        </Style>
+        <Style
+          Name="Search Filter">
+          <Properties></Properties>
+        </Style>
+        <Style
+          Name="Search Filter Drop-down">
+          <Properties></Properties>
+        </Style>
+        <Style
+          Name="Search Filter Drop-down (hover)">
+          <Properties></Properties>
+        </Style>
+      </Medium>
+      <Style
+        Name="Header">
+        <Properties>
+          <Property
+            Name="Height">122px</Property>
+          <Property
+            Name="BackgroundColor">#ffffff</Property>
+          <Property
+            Name="PaddingTop">0.6em</Property>
+          <Property
+            Name="PaddingBottom">0.75em</Property>
+          <!--<Property
+					Name="BackgroundGradient">vertical #0b0416 #444444</Property>-->
+        </Properties>
+      </Style>
+      <Style
+        Name="Menu Item">
+        <Classes>
+          <StyleClass
+            Name="2nd Level">
+            <Properties>
+              <Property
+                Name="MarginRight">0px</Property>
+            </Properties>
+          </StyleClass>
+          <StyleClass
+            Name="3rd Level">
+            <Properties></Properties>
+          </StyleClass>
+          <StyleClass
+            Name="4th Level">
+            <Properties></Properties>
+          </StyleClass>
+          <StyleClass
+            Name="1st Level">
+            <Properties>
+              <Property
+                Name="PaddingTop">0.6em</Property>
+              <Property
+                Name="PaddingBottom">0.6em</Property>
+              <Property
+                Name="PaddingLeft">0.75em</Property>
+              <Property
+                Name="PaddingRight">0.75em</Property>
+              <Property
+                Name="LineHeight">1.333em</Property>
+            </Properties>
+          </StyleClass>
+        </Classes>
+        <Properties>
+          <Property
+            Name="PaddingRight">0.75em</Property>
+          <Property
+            Name="PaddingLeft">0.75em</Property>
+          <Property
+            Name="PaddingTop">0px</Property>
+          <Property
+            Name="PaddingBottom">0.422em</Property>
+          <Property
+            Name="LineHeight">1.333em</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Input">
+        <Properties>
+          <Property
+            Name="BackgroundColor">#ffffff</Property>
+          <Property
+            Name="PaddingLeft">0.6em</Property>
+          <Property
+            Name="Color">#444444</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Menu">
+        <Properties>
+          <Property
+            Name="Float">left</Property>
+          <Property
+            Name="Color">#3F0837</Property>
+          <Property
+            Name="FontSize">0.938em</Property>
+          <Property
+            Name="LineHeight">1.333em</Property>
+          <Property
+            Name="PaddingTop">0.75em</Property>
+          <Property
+            Name="PaddingBottom">0.75em</Property>
+          <Property
+            Name="PaddingRight">0px</Property>
+          <Property
+            Name="PaddingLeft">.01em</Property>
+          <Property
+            Name="AlignmentHorizontal">left</Property>
+        </Properties>
+        <Classes>
+          <StyleClass
+            Name="2nd Level">
+            <Properties>
+              <Property
+                Name="Color">#444444</Property>
+            </Properties>
+          </StyleClass>
+          <StyleClass
+            Name="1st Level">
+            <Properties>
+              <Property
+                Name="Color">#444444</Property>
+              <Property
+                Name="BackgroundColor">#f2f2f2</Property>
+            </Properties>
+          </StyleClass>
+          <StyleClass
+            Name="3rd Level">
+            <Properties>
+              <Property
+                Name="Color">#444444</Property>
+            </Properties>
+          </StyleClass>
+        </Classes>
+      </Style>
+      <Style
+        Name="Logo">
+        <Properties>
+          <Property
+            Name="AlignmentVertical">middle</Property>
+          <Property
+            Name="Display">none</Property>
+          <Property
+            Name="BackgroundImage">none</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Menu Item (hover)">
+        <Classes>
+          <StyleClass
+            Name="1st Level">
+            <Properties>
+              <Property
+                Name="BackgroundColor">#f9f9f9</Property>
+              <Property
+                Name="Color">#3F0837</Property>
+            </Properties>
+          </StyleClass>
+          <StyleClass
+            Name="2nd Level">
+            <Properties>
+              <Property
+                Name="BackgroundColor">#f9f9f9</Property>
+            </Properties>
+          </StyleClass>
+          <StyleClass
+            Name="3rd Level">
+            <Properties />
+          </StyleClass>
+        </Classes>
+        <Properties>
+          <Property
+            Name="Color">#3F0837</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Bar">
+        <Properties>
+          <Property
+            Name="MarginTop">0px</Property>
+          <Property
+            Name="BorderTopLeftRadius">5px</Property>
+          <Property
+            Name="BorderTopRightRadius">5px</Property>
+          <Property
+            Name="BorderBottomRightRadius">5px</Property>
+          <Property
+            Name="BorderBottomLeftRadius">5px</Property>
+          <Property
+            Name="Height">2em</Property>
+          <Property
+            Name="Width">40%</Property>
+          <Property
+            Name="BorderTop">solid 2px #3c3c3c</Property>
+          <Property
+            Name="BorderRight">solid 2px #3c3c3c</Property>
+          <Property
+            Name="BorderBottom">solid 2px #3c3c3c</Property>
+          <Property
+            Name="BorderLeft">solid 2px #3c3c3c</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Submit Button">
+        <Properties>
+          <Property
+            Name="Width">33px</Property>
+          <Property
+            Name="BackgroundColor">#28b905</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Filter">
+        <Properties>
+          <Property
+            Name="Width">32px</Property>
+          <Property
+            Name="BorderTop">solid 2px #3c3c3c</Property>
+          <Property
+            Name="BorderRight">solid 1px #3c3c3c</Property>
+          <Property
+            Name="BorderBottom">solid 2px #3c3c3c</Property>
+          <Property
+            Name="BorderLeft">solid 1px #3c3c3c</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Heading">
+        <Properties>
+          <Property
+            Name="PaddingBottom">0.36em</Property>
+          <Property
+            Name="FontSize">1em</Property>
+          <Property
+            Name="LineHeight">1.333em</Property>
+          <Property
+            Name="MarginBottom">1.333em</Property>
+          <Property
+            Name="MarginTop">2em</Property>
+          <Property
+            Name="Color">#3F0837</Property>
+          <Property
+            Name="BorderBottom">solid 2px #3F0837</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Result Link">
+        <Properties>
+          <Property
+            Name="MarginTop">1.333em</Property>
+          <Property
+            Name="MarginBottom">0.18em</Property>
+          <Property
+            Name="FontWeight">normal</Property>
+          <Property
+            Name="FontSize">1em</Property>
+          <Property
+            Name="TextDecoration">underline</Property>
+          <Property
+            Name="Color">#3F0837</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Result Path">
+        <Properties>
+          <Property
+            Name="FontSize">80%</Property>
+          <Property
+            Name="MarginBottom">0.6em</Property>
+          <Property
+            Name="Color">#444444</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Result Abstract">
+        <Properties>
+          <Property
+            Name="MarginTop">0px</Property>
+          <Property
+            Name="FontSize">1em</Property>
+          <Property
+            Name="PaddingTop">0px</Property>
+          <Property
+            Name="PaddingBottom">0em</Property>
+          <Property
+            Name="MarginBottom">0.18em</Property>
+          <Property
+            Name="Color">#444444</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Results">
+        <Properties>
+          <Property
+            Name="LineHeight">1.333em</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Result Link (visited)">
+        <Properties>
+          <Property
+            Name="TextDecoration">underline</Property>
+          <Property
+            Name="Color">#b2b2b2</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Result Link (focus)">
+        <Properties>
+          <Property
+            Name="Color">#23527c</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Result Link (active)">
+        <Properties>
+          <Property
+            Name="Color">#3F0837</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Filter Drop-down">
+        <Properties>
+          <Property
+            Name="BackgroundColor">#f2f2f2</Property>
+          <Property
+            Name="FontSize">0.875em</Property>
+          <Property
+            Name="Color">#3F0837</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Result Link (hover)">
+        <Properties>
+          <Property
+            Name="Color">#23527c</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Glossary Term">
+        <Properties>
+          <Property
+            Name="FontSize">1em</Property>
+          <Property
+            Name="FontWeight">bold</Property>
+          <Property
+            Name="MarginBottom">0.36em</Property>
+          <Property
+            Name="Color">#444444</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Glossary Result">
+        <Properties>
+          <Property
+            Name="PaddingTop">0.6em</Property>
+          <Property
+            Name="PaddingBottom">0.6em</Property>
+          <Property
+            Name="MarginBottom">1em</Property>
+          <Property
+            Name="PaddingLeft">0.75em</Property>
+          <Property
+            Name="PaddingRight">0.75em</Property>
+          <Property
+            Name="BoxShadowColor">#b2b2b2</Property>
+          <Property
+            Name="BoxShadowVShadow">2px</Property>
+          <Property
+            Name="BoxShadowBlur">4px</Property>
+          <Property
+            Name="BoxShadowHShadow">0px</Property>
+          <Property
+            Name="BorderTop">solid 1px #ededed</Property>
+          <Property
+            Name="BorderTopLeftRadius">7px</Property>
+          <Property
+            Name="BorderTopRightRadius">7px</Property>
+          <Property
+            Name="BorderBottomRightRadius">7px</Property>
+          <Property
+            Name="BorderBottomLeftRadius">7px</Property>
+          <Property
+            Name="Color">#444444</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Glossary Term Link">
+        <Properties>
+          <Property
+            Name="TextDecoration">underline</Property>
+          <Property
+            Name="Color">#28bcf4</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Glossary Term Link (active)">
+        <Properties>
+          <Property
+            Name="Color">#28bcf4</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Glossary Term Link (hover)">
+        <Properties>
+          <Property
+            Name="Color">#23527c</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Glossary Term Link (visited)">
+        <Properties>
+          <Property
+            Name="Color">#b2b2b2</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Glossary Definition">
+        <Properties>
+          <Property
+            Name="Color">#444444</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Pagination">
+        <Properties>
+          <Property
+            Name="LineHeight">1.33em</Property>
+          <Property
+            Name="TextAlign">center</Property>
+          <Property
+            Name="Height">3em</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Pagination Item">
+        <Properties>
+          <Property
+            Name="MarginLeft">0.423em</Property>
+          <Property
+            Name="MarginRight">0.423em</Property>
+          <Property
+            Name="PaddingLeft">0px</Property>
+          <Property
+            Name="PaddingRight">0px</Property>
+          <Property
+            Name="TextDecoration">underline</Property>
+          <Property
+            Name="BorderTop">none 1px #fafafc</Property>
+          <Property
+            Name="BorderRight">none 1px #fafafc</Property>
+          <Property
+            Name="BorderBottom">none 1px #fafafc</Property>
+          <Property
+            Name="BorderLeft">none 1px #fafafc</Property>
+          <Property
+            Name="PaddingTop">1.777em</Property>
+          <Property
+            Name="PaddingBottom">1.777em</Property>
+          <Property
+            Name="MarginTop">0px</Property>
+          <Property
+            Name="MarginBottom">0px</Property>
+          <Property
+            Name="Color">#28bcf4</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Pagination Item (selected)">
+        <Properties>
+          <Property
+            Name="TextDecoration">none</Property>
+          <Property
+            Name="BorderTop">none 1px #e2e2e6</Property>
+          <Property
+            Name="Color">#444444</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Pagination Item (hover)">
+        <Properties>
+          <Property
+            Name="BorderTop">none 1px #e2e2e6</Property>
+          <Property
+            Name="Color">#23527c</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Filter Drop-down (hover)">
+        <Properties>
+          <Property
+            Name="BackgroundColor">#f2f2f2</Property>
+          <Property
+            Name="Color">#444444</Property>
+        </Properties>
+      </Style>
+    </Styles>
+    <Stylesheet></Stylesheet>
+  </Stylesheet>
+  <WebHelpOptions
+    NavigationPanePosition="Right"
+    TopMenuDepth="1"
+    OffCanvasMenuStyle="Drilldown"
+    EnableSticky="None" />
+  <Strings>
+    <Stylesheet
+      lang="en-us">
+      <Stylesheet>
+        <Resources></Resources>
+        <Styles>
+          <Medium
+            Name="Tablet">
+            <Style
+              Name="Navigation Slide Out Button">
+              <Properties></Properties>
+            </Style>
+            <Style
+              Name="Navigation Panel">
+              <Properties></Properties>
+            </Style>
+            <Style
+              Name="Navigation Panel Item">
+              <Properties>
+                <Property
+                  Name="LineHeight">1</Property>
+              </Properties>
+            </Style>
+            <Style
+              Name="Search Filter">
+              <Properties></Properties>
+            </Style>
+            <Style
+              Name="Search Filter Drop-down">
+              <Properties></Properties>
+            </Style>
+            <Style
+              Name="Search Filter Drop-down (hover)">
+              <Properties></Properties>
+            </Style>
+          </Medium>
+          <Style
+            Name="Header">
+            <Properties>
+              <Property
+                Name="Height">122px</Property>
+              <Property
+                Name="BackgroundColor">#292928</Property>
+            </Properties>
+          </Style>
+          <Style
+            Name="Menu Item">
+            <Classes>
+              <StyleClass
+                Name="2nd Level">
+                <Properties>
+                  <Property
+                    Name="PaddingRight">10px</Property>
+                  <Property
+                    Name="MarginRight">0px</Property>
+                </Properties>
+              </StyleClass>
+              <StyleClass
+                Name="3rd Level">
+                <Properties>
+                  <Property
+                    Name="PaddingRight">10px</Property>
+                </Properties>
+              </StyleClass>
+              <StyleClass
+                Name="4th Level">
+                <Properties>
+                  <Property
+                    Name="PaddingRight">10px</Property>
+                </Properties>
+              </StyleClass>
+            </Classes>
+            <Properties></Properties>
+          </Style>
+          <Style
+            Name="Search Input">
+            <Properties>
+              <Property
+                Name="BackgroundColor">#ffffff</Property>
+            </Properties>
+          </Style>
+          <Style
+            Name="Menu">
+            <Properties>
+              <Property
+                Name="Float">right</Property>
+            </Properties>
+          </Style>
+          <Style
+            Name="Logo">
+            <Properties>
+              <Property
+                Name="AltText">Keyfactor</Property>
+            </Properties>
+          </Style>
+        </Styles>
+        <Stylesheet></Stylesheet>
+      </Stylesheet>
+    </Stylesheet>
+  </Strings>
+</CatapultSkin>

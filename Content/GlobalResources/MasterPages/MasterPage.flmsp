@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <div class="TopicContent">
+            <p>CMS <MadCap:variable name="General.VersionNumber" /> <MadCap:variable name="General.PDFGuideTitle" style="font-weight: bold;" /></p>
+            <MadCap:bodyProxy />
+        </div>
+    </body>
+    <MadCap:pageFooter>
+        <p>
+            <p>
+                <hr style="margin-top: 1em;margin-bottom: 1em;border-left-style: inset;border-left-width: 1px;border-right-style: inset;border-right-width: 1px;border-top-style: inset;border-top-width: 1px;border-bottom-style: inset;border-bottom-width: 1px;" />
+            </p>
+            <p class="footer" style="text-align: center;">Copyright ©<MadCap:variable name="General.Year" /> <MadCap:variable name="General.CompanyName" /> All rights reserved. Proprietary and confidential material.</p>
+        </p>
+    </MadCap:pageFooter>
+</html>

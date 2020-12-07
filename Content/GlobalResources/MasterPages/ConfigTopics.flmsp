@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../TableStyles/FooterSubColumns.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../TableStyles/NonTableColumns.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title></title>
+        <link href="../Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <link href="../Stylesheets/GlobalStyles.css" rel="stylesheet" type="text/css" />
+        <link href="../Stylesheets/GlobalFooterStyles.css" rel="stylesheet" type="text/css" />
+        <link href="../Stylesheets/Fixes.css" rel="stylesheet" type="text/css" />
+        <link href="../Stylesheets/glyphicons.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="main">
+            <div id="sideNavDisplay" class="sideNav">
+                <MadCap:menuProxy style="mc-toc-depth: 1;mc-context-sensitive: True;mc-include-parent: True;mc-include-siblings: True;mc-include-children: True;" data-mc-skin="/Project/Skins/SideMenu.flskn" />
+            </div>
+            <div class="content">
+                <!--<div class="topic-lemur-logo"><a href="../../Root.htm"><img src="../Images/home/css-logo.png" alt="" /></a>-->
+                <div class="topic-lemur-logo"><a href="../../../../../Home"><img src="../Images/home/banner-xsm.png" alt="Keyfactor" MadCap:conditions="Master.Build-External" /></a>
+                    <img src="../Images/home/banner-xsm.png" alt="Keyfactor" MadCap:conditions="Master.Build-Embedded" />
+                    <div class="nav-wrapper"><a href="../../../../../Home" MadCap:conditions="Master.Build-External"><span class="glyphicons glyphicons-home"></span><span class="nav-text">Home</span></a>
+                        <MadCap:conditionalText MadCap:conditions="Master.Build-Embedded">
+                            <!--<span class="glyphicons glyphicons-home"></span>-->
+                            <img src="../../Resources/Images/BlankHomePlaceholder.png" />&#160;
+                        </MadCap:conditionalText>
+                        <!--<a href="https://software.keyfactor.com/" MadCap:conditions="General.Build-Embedded"><span class="glyphicons glyphicons-home"></span><span class="nav-text">Online Documentation</span></a>-->
+                        <!--<span class="nav-div">|</span>
+						<a href="../../../../Licenses"><span class="glyphicons glyphicons-keys"></span><span class="nav-text">Licenses</span></a><span class="nav-div">|</span><span class="nav-text"><a href="../../../../Software"><span class="glyphicons glyphicons-cloud-download"></span><span class="nav-text">Software Downloads</span></a></span>-->
+                    </div>
+                </div>
+                <div id="contentBody">
+                    <div class="row collapse clearfix">
+                        <MadCap:breadcrumbsProxy />
+                        <div class="sideContent">
+                            <div class="clearfix">
+                                <MadCap:topicToolbarProxy />
+                            </div>
+                            <!-- <span class="HideShow" onclick="removeElement()">Hide TOC</span><span class="HideShow" onclick="resetElement()">Show TOC</span>-->
+                        </div>
+                        <MadCap:bodyProxy />
+                    </div>
+                </div>
+            </div>
+            <MadCap:snippetBlock src="../Snippets/Footer.flsnp" />
+        </div>
+        <script>
+			function removeElement() {
+			document.getElementById("sideNavDisplay").style.display = "none";
+			}
+
+			function resetElement() {
+			document.getElementById("sideNavDisplay").style.display = "block";
+			}
+		</script>
+        <!-- Below needed if issues with rendering embedded fonts. -->
+        <!--<p><a href="../fonts/ProximaNova-Regular.otf" style="display: none;">ProximaNova-Regular</a></p>-->
+    </body>
+</html>

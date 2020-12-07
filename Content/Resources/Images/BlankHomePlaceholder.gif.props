@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fileProperties>
+    <ImageOverlay ScreenRectangle="344,481,25,12" Profile="C:\Users\sarahd.KEYFACTOR\Documents\My Profiles\KeyfactorProfile.capro" ProfileHash="cfd08c743443e44fcc7224bcbeacbb9b34560da6" Rectangle="344,481,25,12">
+        <OriginalImage AutoAdjust="true" Format="tiff" Type="Image" ShapeTimeSpan="10000" EnableGrayScaleFormat="false" ExportFormat="gif" DPI="96" medium_print_ExportFormat="tif" medium_tablet_ExportFormat="png" medium_mobile_ExportFormat="png" ImageScaleFactor="1" PaddingTop="0" medium_print_EnableFormat="true" medium_print_DPI="150" medium_print_OutputScaleFactor="1" medium_print_ColorDepth="32" medium_tablet_DPI="96" BackgroundType="Solid" BackgroundColor="transparent" BackgroundColorAlt="transparent" EnableCropRectangle="false" CropRectangle="0,0,0,0" ComputedWidth="25" ComputedHeight="12">SUkqAEIAAACAACBQOCQWDQeEQmFQuGQ2HQ+IRGJROKRWLReMRmNRuOR2PR+QSGRSOSSWTSeUSmVSuWS2XS+YRiAgEAD+AAQAAQAAAAAAAAAAAQQAAQAAABkAAAABAQQAAQAAAAwAAAACAQMABAAAAAgBAAADAQMAAQAAAAUAAAAGAQMAAQAAAAIAAAARAQQAAQAAAAgAAAAVAQMAAQAAAAQAAAAWAQQAAQAAAAwAAAAXAQQAAQAAADoAAAAaAQUAAQAAABABAAAbAQUAAQAAABgBAAAcAQMAAQAAAAEAAAAoAQMAAQAAAAIAAAA9AQMAAQAAAAIAAABSAQMAAQAAAAIAAAAAAAAACAAIAAgACAAAdwEA6AMAAAB3AQDoAwAA</OriginalImage>
+        <Shapes />
+        <Variables />
+        <Shapes IsResourceLayer="true" Name="Resources" />
+        <ConditionTagSet />
+    </ImageOverlay>
+</fileProperties>

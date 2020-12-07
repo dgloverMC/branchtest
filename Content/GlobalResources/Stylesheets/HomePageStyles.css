@@ -1,0 +1,992 @@
+﻿/*<meta />*/
+
+/* show for testing; hide for production */
+
+nav.tab-bar
+{
+	display: none;
+	visibility: hidden;
+}
+
+/* Home Page General Styles*/
+
+h1 /* new */
+{
+	font-size: 3em;
+	font-weight: bold;
+	line-height: 1.2em;
+	margin: 0.833em 0 0.625rem 0;
+	text-align: center;
+}
+
+h2 /* new */
+{
+	font-size: 2.25em;
+	font-weight: bold;
+	line-height: 1.4em; 
+	margin: 1.1em 0 0.625rem 0;
+}
+
+h3 /* new */
+{
+	font-size: 1.5em;
+	font-weight: 500;
+	line-height: 1.4em;
+	margin: 0 0 0.625rem 0;
+}
+
+/* .whiteheader
+{
+	color: #ffffff;
+} */
+
+p, ul, ol /* new */
+{
+	font-size: 1.063rem; /* was 1em. Needs to be non-relative to other elements as the base for this page */
+	line-height: 1.687rem;
+	margin: 0 0 1em 0;
+}
+
+ul > li, ol ul > li /* new */
+{
+	margin: 0;
+}
+
+img.right /* new */
+{
+	float: right;
+	width: auto;
+	margin: 0 0 0.5em 0.75em;
+}
+
+img.left /* new */
+{
+	float: left;
+	width: auto;
+	margin: 0 0.75em 0.5em 0;
+}
+
+a.btn:link, a.btn:visited	/*can't use a style ".button" because it's defined in TextEffects.css and used for toolbar buttons. This default is for small buttons that would appear in normal content */
+{
+	font-size: 1.25em;
+	padding: 0.75em 0.75em 0.75em 0.75em;
+}
+
+a.btn.white:link
+{
+	font-size: 1.25em;
+	border-radius: 7px;
+	padding: 0.6em 1.33em 0.6em 1.33em;
+}
+
+a.btn:hover,
+a.btn.white:hover
+{
+	background-color: #28bcf4; /* was 082b47 */
+	border-color: #28bcf4; /* was 082b47 */
+	color: #ffffff;
+}
+
+
+.inner-wrap .tab-bar .nav-search
+{
+	display: none;
+}
+
+.inner-wrap .main-section > .outer-row
+{
+	max-width: 100%;
+	padding: 0;
+}
+
+/* Platform Page fix first paragraph */
+
+#content-section > .outer-row > p:first-child
+{
+	margin: 2em 0 2em 0;
+	font-size: 1.33em;
+}
+
+/* fix footer offset */
+
+div.footer
+{
+	margin-top: 0;
+}
+
+/* Responsive Header Styles*/
+
+div#contentBody
+{
+	postion: relative;
+	top: 0px;
+}
+
+div#contentBody > .responsive-header
+{
+	background-color: transparent;
+}
+
+/* Home Page header section*/
+
+div.crithead
+{
+	padding: 1em 0 0.6em 1.333em;
+}
+
+.search,
+.search-bar
+{
+	padding-bottom: 0.422em;
+	text-align: left;
+	margin: 0 0 0 auto;
+}
+
+.certsol-head
+{
+	float: left;
+}
+
+/* Home Page Topic Hero section*/
+
+div.topichero
+{
+	width:100%;
+	height:auto; /* 580px in CSS */
+	color:#ffffff;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	/*background:#102e56;
+	background:-moz-linear-gradient(45deg,#102e56 0%,#28bcf4 100%);
+	background:-webkit-gradient(linear,left bottom,right top,color-stop(0%,#102e56),color-stop(100%,#28bcf4));
+	background:-webkit-linear-gradient(45deg,#102e56 0%,#28bcf4 100%);
+	background:-o-linear-gradient(45deg,#102e56 0%,#28bcf4 100%);
+	background:-ms-linear-gradient(45deg,#102e56 0%,#28bcf4 100%);
+	background:linear-gradient(45deg,#102e56 0%,#28bcf4 100%);*/
+	/*background:url('/Content/Resources/Images/CMS_5_Reference/homebackground.jpg');*/
+}
+
+div.OLDtopichero
+{
+/*	background-image: none, -webkit-linear-gradient(270deg,rgba(90,89,90,1.00) 0%,rgba(33,36,33,1.00) 100%);
+	background-image: none, -moz-linear-gradient(270deg,rgba(90,89,90,1.00) 0%,rgba(33,36,33,1.00) 100%);
+	background-image: none, -o-linear-gradient(270deg,rgba(90,89,90,1.00) 0%,rgba(33,36,33,1.00) 100%);
+	background-image: none, linear-gradient(180deg,rgba(90,89,90,1.00) 0%,rgba(33,36,33,1.00) 100%);
+*/	background-size: auto; 	/* auto? */
+	background-repeat: no-repeat;
+	background-position: left middle;
+	margin: 0;
+	padding: 0;
+	height: auto; /* was only height: auto, then 264px in new Lemur 2 */
+	text-align: center;
+	border-top: 3px solid #444444; /* was 082b47 */
+}
+
+div.topichero h1
+{
+	color: #ffffff;
+	font-size: 4.375em; /* was 2em */
+	font-weight: bold;
+	line-height: 1.07em; /* was 1.333em */
+	/* 1.2 em */
+	margin: 1.85em 0 0 0;
+	/* was padding: 2em 0 2em 0; */
+	/* I don't know what the following do in this context. I copied it from the CSS website style */
+	-webkit-transition:all .25s ease;
+	-moz-transition:all .25s ease;
+	-ms-transition:all .25s ease;
+	-o-transition:all .25s ease;
+	transition:all .25s ease;
+}
+
+div.topichero h2
+{
+	color: #ffffff;
+	font-size: 1.625em; /* was 1.8em */
+	/*margin-bottom: 2em; */
+	/* was 80px */
+	line-height: 1.333em; 
+	font-weight: bold;
+	font-style: italic;
+	margin: 0.577em 0 4em 0;
+	/* I don't know what the following do in this context. I copied it from the CSS website style */
+	-webkit-transition:all .25s ease;
+	-moz-transition:all .25s ease;
+	-ms-transition:all .25s ease;
+	-o-transition:all .25s ease;
+	transition:all .25s ease;
+}
+
+div.topichero img
+{
+	vertical-align: bottom;
+	padding-top: 1.333em;
+}
+
+
+/* Content Section */
+
+#content-section
+{
+	padding: 0 0 0 0;
+	background-color: #ffffff;
+	margin: 0;
+	height: auto;
+	/* was 270px from left section, right section, left content, right content, all removed because there's only one section */
+}
+
+/*
+#content-section h2
+{
+	font-size: 2em;
+	font-weight: normal;
+	line-height: 1.333em;
+	color: #082b47;
+	margin: 0.75em;
+} 
+
+#content-section h2.platform
+{
+	margin-left: 0em;
+	margin-right: 0em;
+}
+
+#content-section h3
+{
+	font-size: 1.777em;
+	font-weight: normal;
+	line-height: 1.333em;
+	color: #082b47;
+	margin: 1.333em 0 0.75em 0;
+	padding-bottom: 0.25em;
+	border-bottom: 1px solid #dddddd;
+}
+
+#content-section .guide-section h3
+{
+	font-size: 1em;
+	font-weight: bold;
+	margin: 0.25em 0 0.25em 0;
+	padding: 0em;
+	border-bottom: 0px none #dddddd;
+}
+*/
+
+#content-section .guide-section p
+{
+	margin-bottom: 0.6em;
+}
+
+/* Home Page platforms section */
+
+div.platforms
+{
+	background-color: initial; /* was 7b7b7b */
+	background-image: linear-gradient(45deg, rgb(11, 4, 22) 0%, rgb(68, 68, 68) 100%); /* from CSS website */
+	padding: 0 0 0 0;
+}
+
+div.platforms > div.outer-row
+{
+	max-width: 85em;
+	padding: 0;
+	font-size: 1rem;
+	line-height: 1.333rem;
+
+}
+
+/* not used for CSS
+.down-arrow
+{
+	width: 100%;
+	height: 19px;
+	background-image: url('../Images/down-arrow.svg');
+	background-repeat: no-repeat;
+	background-position: center center;
+} */
+
+ul.flex-container
+{
+	padding: 0;
+	margin: 0em 1.333em 0 1.333em; /* was 2.369em 1.333em 0 1.333em */ 
+	display: -webkit-box;
+	/* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;
+	/* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;
+	/* TWEENER - IE 10 */
+	display: -webkit-flex;
+	/* NEW - Chrome */
+	display: flex;
+	/* NEW, Spec - Opera 12.1, Firefox 20+ */
+	-webkit-flex-flow: row wrap;
+	/* Safari */
+	flex-flow: row wrap;
+	/* flex flow and flex wrap; */
+	-webkit-justify-content: space-around;
+	/* Safari */
+	justify-content: space-around;
+	-webkit-align-items: flex-start;
+	/* Safari */
+	align-items: flex-start;
+	-webkit-align-content: space-between;
+	/* Safari */
+	align-content: space-between;
+	max-width: 75em;
+	/*border:#00ffff solid 1px;*/
+}
+
+li.flex-item
+{
+	-webkit-order: 0;
+	/* Safari */
+	order: 0;
+	-webkit-flex: none;
+	/* Safari */
+	flex: none;
+	/* equivalent to 0, 0, auto; no grow, no shrink, auto basis (initial size of item) */
+	/* NEW, Spec - Opera 12.1, Firefox 20+ */
+	-webkit-box-flex: none;
+	/* OLD - iOS 6-, Safari 3.1-6 */
+	-moz-box-flex: none;
+	/* OLD - Firefox 19- */
+	width: auto;
+	/* For old syntax, otherwise collapses. */
+	-webkit-flex: none;
+	/* Chrome */
+	-ms-flex: none;
+	/* IE 10 */
+}
+
+li.flex-item .glyphicons {
+	margin-top: 72px;
+	font-size: 64px;
+}
+
+li.flex-item a 
+{
+	text-decoration: none;
+}
+
+.platforms ul li
+{
+	margin: 1.777em 0.6em 1.777em 0.6em; /* was 0 0.6em 1.777em 0.6em */
+	padding: 0;
+	list-style: none;
+	list-style-type: none;
+	display: inline-block;
+	width: 193px; /* was 195 */
+	height: 192px; /* was 192px */ 
+	background-color: #444444; /* was 414141 */
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+	position: relative;
+	overflow: hidden;
+	border-bottom: 4px solid #28bcf4; /* was 0069ba */
+	-webkit-transition: 0.3s cubic-bezier(0.175,0.885,0.32,1.275) all;
+	-moz-transition: 0.3s cubic-bezier(0.175,0.885,0.32,1.275) all;
+	transition: 0.3s cubic-bezier(0.175,0.885,0.32,1.275) all;
+	cursor: pointer;
+}
+
+.platforms ul li .img-wrapper
+{
+	background-color: #fff;
+	width: 230px; /* was 259px */
+	height: 183px; /* was 217px */
+	position: absolute;
+	left: -18px; /* was -32 px*/
+	top: -32px; /* was -70 px*/
+	overflow: hidden;
+	background-color: #fff;
+}
+
+.platforms ul li .img-wrapper img
+{
+	width: 193px; /* was 195px */
+	position: absolute;
+	left: 18px; /* was 32 */
+	top: 32px; /* was 70 */
+	height: auto;
+	-webkit-transition: 0.3s cubic-bezier(0.215,0.61,0.355,1) all;
+	-moz-transition: 0.3s cubic-bezier(0.215,0.61,0.355,1) all;
+	transition: 0.3s cubic-bezier(0.215,0.61,0.355,1) all;
+}
+
+.platforms ul li .img-wrapper .clip
+{
+	width: 100%;
+	height: 52px;
+	position: absolute;
+	bottom: -4px; /* was -3px */
+	background-image: url('../Images/home/platform-clip.svg'); /* if you change the background color in the list items, must also change the color in the svg */
+	background-position: center center;
+	background-repeat: no-repeat;
+	z-index: 1;
+}
+
+.platforms ul li .thumb-text
+{
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	display: block;
+	color: #fff;
+	-webkit-transition: 0.3s all;
+	-moz-transition: 0.3s all;
+	transition: 0.3s all;
+	text-align: center;
+}
+
+.platforms ul li:hover .img-wrapper img
+{
+	-webkit-transform: scale(1.08);
+	-moz-transform: scale(1.08);
+	-ms-transform: scale(1.08);
+	-o-transform: scale(1.08);
+	transform: scale(1.08);
+}
+
+/* Home Page Video Section - used for other content at bottom */
+
+.video-section
+{
+	padding: 1.667em 0 1.667em 0;
+}
+
+.video-section img
+{
+	padding: 0 1.333em 1.333em 0;
+}
+
+/* not used */
+
+.video-wrapper
+{
+	padding-bottom: 56.25%;
+	/* 16:9 */
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.video
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Platform Page Guide Section */
+
+.guide-section
+{
+	padding: 0em 0 1.667em 0;
+}
+
+.guide-section .centered-text
+{
+	padding: 0.6em 0 0.36em 0;
+	background-color: #f9f9f9; /* was f2f2f2 */
+	margin: 0 0 0.422em 0;
+}
+
+.guide-section h3 a:link,
+.guide-section h3 a:visited
+{
+	text-decoration: none;
+	color: #28bcf4; /* was 0069ba */
+}
+
+.guide-section img
+{
+	mc-thumbnail: none;
+}
+
+/* Mad Cap proxy/editor assigned styles */
+
+MadCap|searchBarProxy
+{
+	display: block;
+	margin-left: auto;
+	margin-right: 0;
+	/* was auto */
+	margin-top: 0;
+	margin-bottom: 0;
+	float: right;
+	/* was none 
+	width: 50%; */
+}
+
+MadCap|topicToolbarProxy
+{
+	float: none;
+}
+
+p.TOC2
+{
+	margin-left: 1.333em;
+	display: none;
+}
+
+MadCap|menuProxy.menu1
+{
+	mc-toc-depth: 1;
+	mc-context-sensitive: True;
+}
+
+MadCap|menuProxy.menu2
+{
+	mc-toc-depth: 1;
+	mc-context-sensitive: True;
+}
+
+html.HomePage
+{
+	mc-community-features: disabled;
+}
+
+/* Home hero section used in topic hero*/
+
+div.HomeHeroSection	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	/* background-image: url('../Images/home/header_keyboard.jpg');
+	background-size: auto;
+	background-repeat: no-repeat; */
+	/* background-position: center top; /* was left 50% */
+}
+
+div.HomeHeroSection::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.HomeHeroSection::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+/*
+div.HomeHeroSection > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+*/
+div.HomeHeroSection > div:nth-child(1)
+{
+	width: 100%; /* was 62% */
+	/* margin-left: 0%; */
+	padding: 0 20px 0px 20px; /* was 0 20 0 200 */
+}
+/*
+div.HomeHeroSection > div:nth-child(2)
+{
+	width: 38%;
+	margin-left: 0%;
+	vertical-align: bottom;
+	height: 100%;
+	border: 1px solid green;
+}
+*/
+/* Home Welcome PDF section not used */
+
+div.HomeWelcomePDFSection	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.HomeWelcomePDFSection::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.HomeWelcomePDFSection::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.HomeWelcomePDFSection > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.HomeWelcomePDFSection > div:nth-child(1)
+{
+	width: 58.333%;
+	margin-left: 0%;
+}
+
+div.HomeWelcomePDFSection > div:nth-child(2)
+{
+	width: 41.667%;
+	margin-left: 0%;
+}
+
+/* Home Welcome Buttons not used */
+
+div.HomeWelcomeButtons	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.HomeWelcomeButtons::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.HomeWelcomeButtons::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.HomeWelcomeButtons > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.HomeWelcomeButtons > div:nth-child(1)
+{
+	width: 33.333%;
+	margin-left: 8.3333%;
+}
+
+div.HomeWelcomeButtons > div:nth-child(2)
+{
+	width: 33.333%;
+	margin-left: 8.3333%;
+}
+
+/* Home Pdf section not used */
+
+div.HomePDFSection	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.HomePDFSection::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.HomePDFSection::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.HomePDFSection > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+div.HomePDFSection > div:nth-child(1)
+{
+	width: 33.33333%;
+}
+
+div.HomePDFSection > div:nth-child(2)
+{
+	width: 33.33333%;
+}
+
+div.HomePDFSection > div:nth-child(3)
+{
+	width: 33.33333%;
+}
+
+/* Home PDF button section not used */
+
+div.HomePDFButton	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.HomePDFButton::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.HomePDFButton::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.HomePDFButton > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.HomePDFButton > div:nth-child(1)
+{
+	width: 50%;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Home Video Section section used for two columns under Platforms and above footer. Was three columns, two rows. Removed one column, one row. */
+
+div.HomeVideoSection	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.HomeVideoSection::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.HomeVideoSection::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.HomeVideoSection > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	text-align: left;
+}
+
+div.HomeVideoSection > div:nth-child(1)
+{
+	width: 70%; /* was 50 */
+	padding: 0 1em 0 0; /* was 0.75 */
+}
+
+div.HomeVideoSection > div:nth-child(2)
+{
+	width: 30%; /* was 50 */
+	padding: 0 0 0 1em; /* was 0.75 */
+}
+
+div.HomeVideoSection > div.evencolumn
+{
+	width: 50%;
+}
+
+
+/* Guide Section section used on Platforms page */
+
+div.GuideSection	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.GuideSection::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.GuideSection::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.GuideSection > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: left;
+	border-right: 1px solid #dddddd;
+	padding: 0 1em 0 1em;
+}
+
+div.GuideSection > div:nth-child(1)
+{
+	width: 25%;
+	padding-left: 0;
+}
+
+div.GuideSection > div:nth-child(2)
+{
+	width: 25%;
+}
+
+div.GuideSection > div:nth-child(3)
+{
+	width: 25%;
+}
+
+div.GuideSection > div:nth-child(4)
+{
+	width: 25%;
+	padding-right: 0;
+	border-right: 0px none #dddddd;
+}
+
+div.quote
+{
+	padding: 0;
+	background-color: #444444; /* was 082b47 */
+	color: #ffffff;
+}
+
+div.bordered
+{
+	border: solid 1px #444444; /* was 082b47 */
+	padding: 1px;
+}
+
+/* Medium Layout */
+
+@media tablet
+{
+	/* div.topichero h1
+	{
+		padding: 1em 0px 1em 0px;
+	} */
+
+	MadCap|searchBarProxy.homeSearchBar
+	{
+		width: 50%;
+	}
+}
+
+/* Small Layout */
+
+@media mobile
+{
+	MadCap|searchBarProxy.homeSearchBar
+	{
+		width: 50%;
+	}
+
+	div.topichero h1
+	{
+		font-size: 2em;
+	}
+
+	div.topichero h2
+	{
+		font-size: 1.2em;
+	}
+
+	#content-section
+	{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.video-section
+	{
+		padding-top: 30px;
+	}
+
+	.video-section .columns
+	{
+		padding: 0;
+	}
+
+	.guide-section
+	{
+		padding-top: 30px;
+	}
+
+	.guide-section .columns
+	{
+		padding: 0;
+	}
+
+	div.HomeHeroSection
+	{
+		background-image: none;
+	}
+
+	div.HomeHeroSection > div:nth-child(1)
+	{
+		width: 100%;
+		padding: 0 20px 0px 20px;
+	}
+
+	div.HomeHeroSection > div:nth-child(2)
+	{
+		display: none;
+	}
+
+	div.HomeVideoSection > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0;
+	}
+
+	div.HomeVideoSection > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0;
+	}
+
+	div.GuideSection > div:nth-child(1)
+	{
+		width: 100%;
+		margin-right: 0;
+	}
+
+	div.GuideSection > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0;
+	}
+
+	div.GuideSection > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0;
+	}
+
+	div.GuideSection > div:nth-child(4)
+	{
+		width: 100%;
+		margin-left: 0;
+	}
+}

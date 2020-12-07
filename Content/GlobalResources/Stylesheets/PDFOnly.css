@@ -1,0 +1,1174 @@
+﻿/*<meta />*/
+
+@import url('MainStyles.css');
+
+/*
+modular scales: http://www.modularscale.com/?1&em&1.333,1.667,2&web&text
+perfect fourth, 3:4 = 1.333; major sixth, 3:5 = 1.667; octave 2:1
+for tiny spacing: major eleventh, 3:8 = 2.667
+base unit = 100% = 16px
+
+Blue for interactive elements: #28B905 from CSS website
+Dark blue for hover state: #23527c from CSS website
+Light gray for visited state: #b2b2b2 from certsol -- also used for topbar navigation shadow
+Main gray for text and headings: #444444 from CSS website
+light gray background: #f9f9f9 from CSS website
+light gray border for screenshot thumbnails: #f9f9f9 from CSS website
+light gray border around sidemenu elements and Home page H3 border: #dddddd from certsol
+
+
+
+OLD certsol:
+ orange: #082b47 from lemur logo ai. Was #d7792f from website
+ green: #0069ba from lemur logo ai. Was #7cbf4a or #7bbe4a from website
+ green text 14pt and smaller: #0069ba. Used in search results and search filter dropdown.
+ main gray: #636363
+ light gray background: #f2f2f2
+ light gray border: #dddddd
+ super light gray text: #b2b2b2
+ light gray text: #999999
+ dark gray for platforms background on home page: #7b7b7b
+ 5px radius on curved borders
+  
+Madcap|xref link formatting doesn't work unless you alter it in the MainStyles.css
+madcap|footnote formatting doesn't work
+Madcap|popup formatting doesn't work
+*/
+
+/* General formatting */
+
+a,
+a:link,
+a:active
+{
+	color: #28B905;
+	/* was #0069ba */
+}
+
+a:visited
+{
+	color: #b2b2b2;
+}
+
+a:hover
+{
+	/* was 000000 */
+	color: #7d0f6e;
+}
+
+a.logo
+{
+	float: left;
+	width: 30%;
+}
+
+a.BlackText
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+a.DocTitle
+{
+	font-style: italic;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5
+{
+	font-weight: 500;
+	/* was normal */
+	color: #444444;
+	/* was 082b47 */
+	line-height: 1.2em;
+	margin: 1.777em 0 0.563em 0;
+	padding: 0;
+	clear: left;
+}
+
+h1
+{
+	font-size: 2.369em;
+	/* CSS is 48px, which is 3em, but that would mess up the modular rhythm and I don't have time to redo all the proportions right now */
+	/*octave*/
+	margin: 1.777em 0 0.422em 0;
+}
+
+h1 > sup
+{
+	font-size: 50%;
+}
+
+h2
+{
+	font-size: 1.777em;
+}
+
+h3
+{
+	font-size: 1.5em;
+}
+
+h4
+{
+	/*color: #000000; */
+	font-size: 1.333em;
+}
+
+h5
+{
+	/* color: #000000; */
+	font-size: 1em;
+}
+
+p
+{
+	margin: 0 0 1.333em 0;
+}
+
+p.glossary /* For index tag at the top of the first page of the generated glossary */
+{
+	position: absolute;
+	bottom: 0;
+	text-align: right;
+}
+
+p.API-example-heading
+{
+	font-weight: 500;
+	color: #444444;
+	clear: left;
+	font-size: 1.5em;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	line-height: 0;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 1.33em;
+}
+
+.indent
+{
+	margin-left: 2.666em;
+}
+
+ul
+{
+	margin-bottom: 1.333em;
+	list-style-type: disc;
+	/* list-style-image: url('../Images/Bullet1.png'); */
+}
+
+p + ul
+{
+	margin-top: -0.4em;
+}
+
+ul p
+{
+	margin-bottom: 0.75em;
+}
+
+ul > li,
+ol ul > li
+{
+	margin-bottom: 0.75em;
+	orphans: 2;
+	widows: 2;
+}
+
+ul ul
+{
+	margin-top: 0.75em;
+	margin-bottom: 0.75em;
+	list-style-type: circle;
+	/* list-style-image: url('../Images/Bullet2.png'); */
+}
+
+ol
+{
+	font-family: Calibri;
+	font-size: 8pt;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 10pt;
+	margin-bottom: .75em;
+	margin-left: 0;
+	list-style-type: decimal;
+}
+
+ol > li
+{
+	margin-bottom: 1.333em;
+	/* circled */
+	margin: 0 0 1.333em 2.5em;
+	/* Give each list item a left margin to make room for the numbers */
+	padding: 0 0 0 0em;
+	/* Add some spacing around the content */
+}
+
+/* circled */
+
+ol > li:before
+{
+	margin-right: 0.5em;
+	font-family: Calibri, sans-serif;
+	/* the numbers in the Corbel font are weird and inconsitent in line height and different numbers don't fit in the box in the same way. They're too "fancy." Calibri is close in looks and they align correctly. */
+}
+
+ol ul
+{
+	margin-top: 0.75em;
+	padding-left: 1.5em;
+	/* Indent unordered lists that come within ordered lists less in PDFs since they don't have the large numbers that the web output has. SLD */
+}
+
+ol ol
+{
+	margin-top: 0.75em;
+	list-style-type: lower-alpha;
+}
+
+ol ol > li:before
+{
+	width: auto;
+	margin-right: 0;
+	padding: 0;
+	/* color: #636363; */
+}
+
+.centered-text
+{
+	text-align: center;
+}
+
+.monospace	/* for path and file names and commands, etc. attach to span or div */
+{
+	font-family: Consolas, "Courier New", monospace;
+}
+
+.control	/* for screen items, controls, button names, selections, etc. */
+{
+	font-weight: bold;
+}
+
+li.Keep_With_Next
+{
+	page-break-after: avoid;
+}
+
+p.captionTOC
+{
+	font-family: Calibri;
+	font-size: 8pt;
+	font-weight: normal;
+	color: #3c3c3c;
+	margin-bottom: 0pt;
+	margin-top: 1pt;
+	line-height: 8pt;
+	/*           mc-auto-number-class: Figures;
+    mc-auto-number-format: 'GF:Figure {n+}: '; */
+	mc-leader-format: 'dot';
+	mc-leader-align: right;
+}
+
+p.Keep_With_Next
+{
+	page-break-after: avoid;
+}
+
+p.Example_Request_Response
+{
+	page-break-after: avoid;
+}
+
+/* ------------------ tables and figures ----------------------*/
+
+img.screenshot
+{
+	margin: 0 0 0.5em 0;
+	max-width: 55em;
+	border: 1px solid #f2f2f2;
+	/* was dddddd */
+	display: block;
+	mc-thumbnail: popup;
+	mc-thumbnail-max-height: 50px;
+	/* was 159px */
+	/* 9.969em */
+}
+
+li > a > img.img.imgscreenshot	/* inside a list item, inside the thumbnail link, the thumbnail image needs space above 99% of time. Have to use output class of .imgscreenshot for this to work. Using internal class of .screenshot doesn't work.  */
+{
+	margin-top: 0.75em;
+}
+
+img.Hyperlinked
+{
+	border-style: none;
+}
+
+img.Example /* For images on the peachy background that can't use the top padding that comes over from Capture due to transparency problems in PDF output. */
+{
+	margin-top: 16px;
+}
+
+caption,
+p.caption,
+p.Caption_1
+{
+	font-size: 8pt;
+	text-align: left;
+	color: #999999;
+	font-style: italic;
+	line-height: 9pt;
+	/* new */
+}
+
+p.Caption_1
+{
+	mc-auto-number-class: Figures;
+	/*mc-auto-number-format: 'Figure CH:{n+}: ';*/
+	mc-auto-number-format: 'GF:Figure {n+}: ';
+}
+
+p.Caption_1_Center
+{
+	font-size: 8pt;
+	text-align: center;
+	color: #999999;
+	font-style: italic;
+	/* new */
+	line-height: 8pt;
+	mc-auto-number-class: Figures;
+	mc-auto-number-format: 'Figure CH:{n+}: ';
+}
+
+p.Table_Title
+{
+	font-size: 10pt;
+	text-align: left;
+	color: #999999;
+	font-style: normal;
+	line-height: 11pt;
+	mc-auto-number-class: Tables;
+	mc-auto-number-format: 'CT:Table {n+}: ';
+}
+
+th
+{
+	font-size: 0.875em;
+}
+
+td
+{
+	/* font-size: 0.875em; */
+	font-size: 1em;
+	line-height: 1.3em;
+	vertical-align: top;
+}
+
+td p,
+td li
+{
+	margin-bottom: 0.5em;
+}
+
+td ol
+{
+	margin: 0.5 0 1em 0;
+	padding-left: 0em;
+}
+
+td ol > li
+{
+	margin-top: 0.75em;
+	margin-bottom: 0.75em;
+}
+
+td ul
+{
+	margin: 0.5 0 1em 0;
+	padding-left: 2.333em;
+	list-style-type: disc;
+	/* list-style-image: url('../Images/Bullet2.png');*/
+}
+
+td ul ul,
+td ol ul,
+td ol ol
+{
+	margin-bottom: 0.75em;
+}
+
+td p:last-child,
+td ul:last-child,
+td ol:last-child,
+td li:last-child
+{
+	margin-bottom: 0;
+}
+
+td p + ul
+{
+	margin-top: 0.5em;
+}
+
+td ul:first-child,
+td ol:first-child
+{
+	margin-top: 0em;
+}
+
+td ul ul:first-child,
+td ol ul:first-child
+{
+	margin-top: 0.5em;
+}
+
+/* ----------------- buttons ------------------ */
+
+a.btn:link,
+a.btn:visited	/*can't use a style ".button" because it's defined in TextEffects.css and used for toolbar buttons. This default is for small buttons that would appear in normal content */
+{
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+	position: relative;
+	/* need this to workaround CSS3PIE known issue: http://css3pie.com/documentation/known-issues/#z-index */
+	z-index: 1;
+	font-size: 0.75em;
+	border-radius: 5px;
+	color: #ffffff;
+	background-color: #28B905;
+	/* was 0069ba */
+	padding: 0.36em 0.75em 0.36em 0.75em;
+}
+
+a.btn.white:link
+{
+	background-color: #ffffff;
+	color: #28B905;
+	/* was 0069ba */
+	font-size: 1.25em;
+	border-radius: 7px;
+	padding: 0.6em 1.33em 0.6em 1.33em;
+}
+
+a.btn:hover,
+a.btn.white:hover
+{
+	background-color: #28B905;
+	/* was 082b47 */
+	border-color: #28B905;
+	/* was 082b47 */
+	color: #ffffff;
+}
+
+/* ----------------- Notes, tips, Warnings, Source code, Examples ------------ */
+
+div.note
+{
+	background-repeat: no-repeat;
+	border-radius: 5px;
+	color: #444444;
+	/* was 636363 */
+	padding: .9em .6em 1.3em 38px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin-top: 1.333em;
+	margin-bottom: 1.333em;
+	font-family: Calibri;
+	font-size: 8pt;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1.2em;
+	/*page-break-inside: avoid;*/
+}
+
+div.note.note
+{
+	background-color: #E6E7E8; /* Keyfactor light gray */
+	background-image: url('../Images/note-icon-pdf.png');
+	border: solid 1px #E6E7E8;
+	page-break-inside: avoid;
+}
+
+.noteInDiv
+{
+	mc-auto-number-format: '{b}{color #444444}Note:  {/color}{/b}';
+	page-break-inside: avoid;
+	/* was 636363 */
+}
+
+div.note p:last-child,
+div.tip p:last-child,
+div.imp p:last-child,
+div.warn p:last-child
+{
+	margin-bottom: 0;
+}
+
+div.note.tip
+{
+	background-color: #faf3e1;
+	/* color not fixed for CSS */
+	background-image: url('../Images/tip-icon-pdf.png');
+	border: solid 1px #faf3e1;
+	/* color not fixed for CSS */
+	page-break-inside: avoid;
+}
+
+.tipInDiv
+{
+	mc-auto-number-format: '{b}{color #d9a927}Tip:  {/color}{/b}';
+	/* color not fixed for CSS */
+	page-break-inside: avoid;
+}
+
+div.note.example
+{
+	background-color: #faf3e1;
+	background-image: url('../Images/tip-icon-pdf.png');
+	border: solid 1px #faf3e1;
+	page-break-inside: auto;
+}
+
+.exampleInDiv
+{
+	mc-auto-number-format: '{b}{color #d9a927}Example:  {/color}{/b}';
+	page-break-inside: auto;
+}
+
+div.note.imp
+{
+	background-color: #faede1;
+	/* color not fixed for CSS */
+	background-image: url('../Images/important-icon-pdf.png');
+	border: solid 1px #faede1;
+	/* color not fixed for CSS */
+	page-break-inside: avoid;
+}
+
+.impInDiv
+{
+	mc-auto-number-format: '{b}{color #da6303}Important:  {/color}{/b}';
+	/* color not fixed for CSS */
+	/* Original color was #082b47 (very dark blue) */
+	page-break-inside: avoid;
+}
+
+div.note.warn
+{
+	background-color: #fcf2f0;
+	/* color not fixed for CSS */
+	background-image: url('../Images/warning-icon-pdf.png');
+	border: solid 1px #fcf2f0;
+	/* color not fixed for CSS */
+	page-break-inside: avoid;
+}
+
+.warnInDiv
+{
+	mc-auto-number-format: '{b}{color #b8270a}Warning:  {/color}{/b}';
+	/* color not fixed for CSS */
+	page-break-inside: avoid;
+}
+
+div.note p,
+div.tip p,
+div.warn p
+{
+	margin: 0.75em 0 0 0;
+	padding: 0;
+	page-break-inside: avoid;
+}
+
+.note p:first-child,
+.tip p:first-child,
+.warn p:first-child
+{
+	margin-top: 0;
+}
+
+pre.example
+{
+	background-color: #f2f2f2;
+	/* was f2f2f2 */
+	background-repeat: no-repeat;
+	border: solid 1px #f9f9f9;
+	/* was f2f2f2 */
+	border-radius: 5px;
+	margin-top: 1.667em;
+	margin-bottom: 1.667em;
+	padding: 1.667em 1.667em 1.667em 1.667em;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	font-family: Consolas, "Courier New", monospace;
+	font-size: 0.75em;
+	white-space: pre-wrap;
+	width: auto;
+	max-width: 65em;
+}
+
+p.ExampleHeadText
+{
+	font-size: 1.333em;
+	font-weight: bold;
+	page-break-after: avoid;
+	letter-spacing: 0.15em;
+	margin: 0 0 0.75em 0;
+	padding: 0;
+}
+
+span.code-blue
+{
+	color: #0000FF;
+}
+
+span.code-aqua
+{
+	color: #2B91AF;
+}
+
+span.code-gray
+{
+	color: #808080;
+}
+
+span.code-darkred
+{
+	color: #A31515;
+}
+
+span.code-comment
+{
+	color: #008000;
+}
+
+span.code-red
+{
+	color: #FF0000;
+}
+
+/* ------------------ misc tweaks and overrides ----------------- */
+
+span.SetOff	/* used for highlighted words at start of a paragrph or list item; replaces MadCap styles SetOffFirst Level and SetOffSecond Level */
+{
+	color: #444444;
+	/* was 636363 */
+	font-weight: bold;
+}
+
+span.Emphasis
+{
+	font-weight: bold;
+	mc-disable-glossary-terms: true;
+}
+
+span.Italicize
+{
+	font-style: italic;
+	mc-disable-glossary-terms: true;
+}
+
+h3.title
+{
+	font-size: 1em;
+	line-height: 1.333em;
+	color: #28B905;
+	/* was 0069ba */
+	/* must be specified or IE and firefox show link underline in default H3 color instead of link color. No idea why. */
+}
+
+MadCap|xref
+{
+	color: #2D8DCC;
+	font-weight: normal;
+	mc-format: '{para} {page}';
+	text-decoration: none;
+}
+
+MadCap|dropDownHotspot:hover
+{
+	color: #28b905;
+}
+
+@media print
+{
+	body
+	{
+		color: #404040;
+		font-family: Calibri;
+		font-size: 8pt;
+		font-weight: normal;
+		font-style: normal;
+		line-height: 10pt;
+	}
+
+	div.TopicContent
+	{
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 25px;
+	}
+
+	div.GlossaryPageDefinition
+	{
+		font-size: 9pt;
+	}
+
+	div.GlossaryPageHeading
+	{
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		font-size: 11pt;
+		color: #7d0f6e;
+		border-bottom-color: #7d0f6e;
+	}
+
+	div.GlossaryPageTerm
+	{
+		font-size: 10pt;
+		padding-bottom: 10px;
+		padding-top: 10px;
+		color: #7d0f6e;
+	}
+
+	div.KeepCaptionsWithContent
+	{
+		page-break-inside: avoid;
+	}
+
+	h1
+	{
+		border-bottom: none;
+		color: #28B905;
+		font-family: Calibri;
+		font-size: 20pt;
+		font-weight: bold;
+		line-height: 24pt;
+		margin-bottom: 12pt;
+		margin-top: 18pt;
+		margin-left: 0;
+		margin-right: 0;
+		padding: 0;
+		/*	mc-auto-number-position: outside-head;  */
+		mc-auto-number-offset: 75px;
+		page-break-after: avoid;
+		mc-auto-number-format: 'CH:{chapnum}.0  ';
+		text-decoration: none;
+	}
+
+	h2
+	{
+		font-size: 16pt;
+		font-weight: bold;
+		line-height: 20pt;
+		font-family: Calibri;
+		/*	mc-auto-number-position: outside-head;  */
+		mc-auto-number-offset: 75px;
+		page-break-after: avoid;
+		margin-bottom: 12pt;
+		margin-top: 18pt;
+		mc-auto-number-format: 'CH:{chapnum}.{n+}  ';
+		color: #7d0f6e;
+	}
+
+	h3
+	{
+		font-size: 14pt;
+		line-height: 18pt;
+		font-weight: bold;
+		font-family: Calibri;
+		/*mc-heading-level: 0;*/
+		/*	mc-auto-number-position: outside-head; */
+		mc-auto-number-offset: 75px;
+		page-break-after: avoid;
+		margin-bottom: 12pt;
+		margin-top: 18pt;
+		mc-auto-number-format: 'CH:{chapnum}.{n}.{n+}  ';
+		color: #7d0f6e;
+	}
+
+	h4
+	{
+		font-size: 12pt;
+		line-height: 16pt;
+		font-family: Calibri;
+		font-weight: bold;
+		mc-heading-level: 0;
+		/* mc-auto-number-position: outside-head;*/
+		mc-auto-number-offset: 75px;
+		page-break-after: avoid;
+		margin-bottom: 12pt;
+		margin-top: 18pt;
+		mc-auto-number-format: 'CH:{chapnum}.{n}.{n}.{n+}  ';
+		color: #7d0f6e;
+	}
+
+	h5
+	{
+		font-size: 12pt;
+		line-height: 16pt;
+		font-family: Calibri;
+		font-weight: bold;
+		mc-heading-level: 0;
+		/* mc-auto-number-position: outside-head;*/
+		mc-auto-number-offset: 75px;
+		page-break-after: avoid;
+		margin-bottom: 12pt;
+		margin-top: 18pt;
+		mc-auto-number-format: 'CH:{chapnum}.{n}.{n}.{n}.{n+}  ';
+		color: #7d0f6e;
+	}
+
+	h6
+	{
+		font-size: 12pt;
+		line-height: 16pt;
+		font-family: Calibri;
+		font-weight: bold;
+		mc-heading-level: 0;
+		/* mc-auto-number-position: outside-head;*/
+		mc-auto-number-offset: 75px;
+		margin-bottom: 12pt;
+		margin-top: 18pt;
+		mc-auto-number-format: 'CH:{chapnum}.{n}.{n}.{n}.{n}.{n+}  ';
+		color: #7d0f6e;
+	}
+
+	img
+	{
+		/*margin-top: 15pt;*/
+		/*min-resolution: 300dppx;*/
+		image-resolution: 600dpi;
+		/*width: 75%; */
+		max-width: 100%;
+		/*page-break-after: avoid;*/
+	}
+
+	imgSize
+	{
+		border: none;
+		margin-top: 10pt;
+		min-resolution: 300dppx;
+		max-width: 6in;
+		page-break-after: avoid;
+	}
+
+	p.Front_Headings
+	{
+		border-bottom: none;
+		color: #28B905;
+		font-family: Calibri;
+		font-size: 20pt;
+		font-weight: bold;
+		line-height: 24pt;
+		margin-bottom: 12pt;
+		margin-top: 18pt;
+		margin-left: 0;
+		margin-right: 0;
+		padding: 0;
+		page-break-before: always;
+		text-decoration: none;
+	}
+
+	MadCap|dropDownHotspot
+	{
+		color: #404040;
+		font-size: 10pt;
+		line-height: 14pt;
+		font-family: Calibri;
+		font-weight: bold;
+		margin-bottom: 12pt;
+		margin-top: 14pt;
+		page-break-after: avoid;
+	}
+
+	MadCap|dropDownHead
+	{
+		page-break-after: avoid;
+	}
+
+	MadCap|dropDownBody
+	{
+		orphans: 2;
+		widows: 2;
+	}
+
+	MadCap|dropDownBody + ul
+	{
+		orphans: 2;
+		widows: 2;
+	}
+
+	MadCap|dropDownBody.Final
+	{
+		orphans: 2;
+		widows: 2;
+	}
+
+	MadCap|glossaryProxy
+	{
+		border-top: none;
+	}
+
+	MadCap|indexProxy
+	{
+		border-top: none;
+	}
+
+	MadCap|tocProxy
+	{
+		border-top: none;
+		margin-right: 0.25in;
+		color: #28B905;
+	}
+
+	MadCap|listOfProxy
+	{
+		border-top: none;
+		margin-right: 0.25in;
+		color: #28B905;
+	}
+
+	MadCap|xref
+	{
+		color: #2D8DCC;
+		font-weight: normal;
+		/*	mc-format: '{paratext} {pageref}'; */
+		mc-format: '{paranum}{paratext} {pageref}';
+		text-decoration: none;
+	}
+
+	p
+	{
+		font-family: Calibri;
+		font-size: 8pt;
+		font-weight: normal;
+		font-style: normal;
+		line-height: 10pt;
+		orphans: 2;
+		widows: 2;
+	}
+
+	caption,
+	p.caption,
+	p.Caption_1
+	{
+		font-size: 8pt; /* Was 10pt, but that makes it way bigger than the rest of the text in the PDF output. */
+		text-align: left;
+		color: #999999;
+		font-style: italic;
+		line-height: 11pt;
+		/* new */
+		/*page-break-before: avoid;*/
+	}
+
+	p.Caption_1
+	{
+		mc-auto-number-class: Figures;
+		mc-auto-number-format: 'GF:Figure {n+}: ';
+		/*page-break-before: avoid;*/
+	}
+
+	p.Caption_1_Center
+	{
+		font-size: 10pt;
+		text-align: center;
+		color: #999999;
+		font-style: italic;
+		/* new */
+		line-height: 11pt;
+		mc-auto-number-class: Figures;
+		mc-auto-number-format: 'GF:Figure {n+}: ';
+		/*page-break-before: avoid;*/
+	}
+
+	p.imgCont
+	{
+		page-break-after: avoid;
+	}
+
+	p.EmptyPageText
+	{
+		font-size: 10pt;
+		font-weight: bold;
+	}
+
+	p.FrameFooterText
+	{
+		font-family: 'Century Gothic';
+		font-size: 24pt;
+	}
+
+	p.IndexHeading
+	{
+		font-size: 11pt;
+		padding-top: 16px;
+		text-align: left;
+	}
+
+	p.ManualTitle1
+	{
+		margin-bottom: 0;
+		font-family: Calibri;
+		font-size: 14pt;
+		color: #0070c0;
+		text-align: right;
+		vertical-align: middle;
+		padding: 0;
+		margin-top: 0;
+		margin: 0;
+	}
+
+	p.ManualTitle2
+	{
+		color: #bed230;
+		font-family: 'Century Gothic';
+		font-size: 22pt;
+		line-height: 0;
+		margin-bottom: 0;
+		margin-top: 0;
+		text-align: center;
+	}
+
+	p.ManualVersionNumber
+	{
+		font-family: Calibri;
+		font-size: 9pt;
+		color: #b3b3b3;
+		text-align: left;
+		margin-top: 6pt;
+	}
+
+	p.Table_Title
+	{
+		font-size: 10pt;
+		text-align: left;
+		color: #999999;
+		font-style: normal;
+		line-height: 11pt;
+		mc-auto-number-class: Tables;
+		mc-auto-number-format: 'GT:Table {n+}: ';
+		page-break-after: avoid;
+	}
+
+	p.TOC1
+	{
+		color: #3c3c3c;
+		font-size: 10pt;
+		margin-bottom: 2pt;
+		margin-top: 2pt;
+		line-height: 8pt;
+	}
+
+	p.TOC2
+	{
+		font-size: 8pt;
+		color: #3c3c3c;
+		margin-bottom: 0pt;
+		margin-top: 0pt;
+		line-height: 8pt;
+	}
+
+	p.TOC3
+	{
+		font-size: 8pt;
+		color: #3c3c3c;
+		margin-bottom: 0pt;
+		margin-top: 0pt;
+		line-height: 8pt;
+	}
+
+	p.TOC4
+	{
+		font-size: 8pt;
+		color: #3c3c3c;
+		margin-bottom: 0pt;
+		margin-top: 0pt;
+		line-height: 8pt;
+		mc-heading-level: 0;
+	}
+
+	p.TOC5
+	{
+		font-size: 8pt;
+		color: #3c3c3c;
+		margin-bottom: 0pt;
+		margin-top: 0pt;
+		line-height: 8pt;
+		mc-heading-level: 0;
+	}
+
+	p.captionTOC
+	{
+		font-family: Calibri;
+		font-size: 8pt;
+		font-weight: normal;
+		color: #3c3c3c;
+		margin-bottom: 0pt;
+		margin-top: 1pt;
+		line-height: 8pt;
+		/*	mc-auto-number-class: Figures;
+		mc-auto-number-format: 'GF:Figure {n+}: '; */
+	}
+
+	ul
+	{
+		/*	left: auto; */
+		list-style: bullet;
+		margin-left: .25in;
+		font-size: 8pt;
+		font-family: Calibri;
+		line-height: 10pt;
+		list-style-position: inherit;
+	}
+
+	MadCap|xref
+	{
+		color: #404040;
+		font-weight: normal;
+		mc-format: '{paratext} {pageref}';
+		text-decoration: none;
+	}
+	
+	MadCap|xref.FigureRef
+	{
+		mc-format: '{paranum}{paratext}';
+	}
+
+	MadCap|xref.TableRef
+	{
+		mc-format: '{paranum}{paratext}';
+	}
+
+	h1.glossary
+	{
+		frame-break-after: always;
+	}
+}
+
+MadCap|xref.TOCPageNumber
+{
+	mc-format: '{para}';
+}
+
+MadCap|xref.HeadAndPage
+{
+	mc-format: '{paratext} {pageref}';
+}
+
+MadCap|xref.FigureRefPage
+{
+	mc-format: '{paranum}{paratext} {pageref}';
+}

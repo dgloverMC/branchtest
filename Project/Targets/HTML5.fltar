@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="MadCap HTML5 Target"
+  Type="WebHelp2"
+  Destinations=""
+  ShowMadCapBacklink="false"
+  GlossaryTermConversion="marked"
+  DisableAutoSync="true"
+  MasterStylesheet="/Content/GlobalResources/Stylesheets/GlobalStyles.css"
+  MasterToc="/Project/TOCs/Master.fltoc"
+  DefaultUrl="/Content/MasterTopics/Introduction.htm"
+  MasterStylesheetOverride="true"
+  Skin="/Project/Skins/HTML5 - Top Navigation.flskn"
+  MasterPage="/Content/GlobalResources/MasterPages/NewPage.flmsp"
+  ContentInclusionType="Referenced">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+</CatapultTarget>

@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultGlossary>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term0"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>x.509</Term>
+    </Terms>
+    <Definition
+      Link="">In cryptography, X.509 is a standard defining the format of public key certificates. An X.509 certificate contains a public key and an identity (e.g. a host name or an organization or individual name), and is either signed by a certificate authority or self-signed. When a certificate is signed by a trusted certificate authority it can be used to establish trusted secure communications with the owner of the corresponding private key. It can also be used to verify digitally signed documents and emails.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term3"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Workflow</Term>
+    </Terms>
+    <Definition
+      Link="">A workflow is a series of steps necessary to complete a process. In the context of [%=General.ProductName%], workflow refers to processes such as that for certificate enrollment: requesting a certificate, approving a certificate request (issuing the certificate), downloading the certificate, certificate expiration alerts, renewing the certificate.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term5"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Template</Term>
+    </Terms>
+    <Definition
+      Link="">A certificate template defines the policies and rules that a CA uses when a request for a certificate is received.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term7"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>SSL</Term>
+      <Term>TLS</Term>
+    </Terms>
+    <Definition
+      Link="">TLS (Transport Layer Security) and its predecessor SSL (Secure Sockets Layer) are protocols for establishing authenticated and encrypted links between networked computers.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term8"
+    IgnoreCase="true"
+    Stem=""
+    TermClass="Popup">
+    <Terms>
+      <Term>Bash Orchestrator</Term>
+    </Terms>
+    <Definition
+      Link="">The Bash Orchestrator, one of [%=General.CompanyName%]'s suite of orchestrators,  is used to discover and manage SSH keys across an enterprise.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term9"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>SSH</Term>
+    </Terms>
+    <Definition
+      Link="">The SSH (secure shell) protocol provides for secure connections between computers. It provides several options for authentication, including public key, and protects the communications with strong encryption.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term10"
+    Stem=""
+    IgnoreCase="false"
+    TermClass="Popup">
+    <Terms>
+      <Term>SMTP</Term>
+    </Terms>
+    <Definition
+      Link="">Short for simple mail transfer protocol, SMTP is a protocol for sending email messages between servers.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term11"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Subject Alternative Name</Term>
+      <Term>SAN</Term>
+    </Terms>
+    <Definition
+      Link="">The subject alternative name (SAN) is an extension to the X.509 specification that allows you to specify additional values when enrolling for a digital certificate. A variety of SAN formats are supported, with DNS name being the most common.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term12"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>RPC</Term>
+    </Terms>
+    <Definition
+      Link="">Remote procedure call (RPC) allows one program to call a function from a program located on another computer on a network without specifying network details. In the context of [%=General.ProductName%], RPC errors often indicate Kerberos authentication or delegation issues.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term13"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>RoT</Term>
+      <Term>Root of Trust</Term>
+    </Terms>
+    <Definition
+      Link="">A root of trust (RoT) is a source within a cryptographic system that can always be trusted. It is typically a hardened hardware module. HSMs (hardware security modules) and TPMs (trusted platform modules) are examples of RoTs.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term14"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Public Key</Term>
+    </Terms>
+    <Definition
+      Link="">In asymmetric cryptography, public keys are used together in a key pair with a private key. The private key is retained by the key's creator while the public key is widely distributed to any user or target needing to interact with the holder of the private key.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term15"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Private Key</Term>
+    </Terms>
+    <Definition
+      Link="">Private keys are used in cryptography (symmetric and asymmetric) to encrypt or sign content. In asymmetric cryptography, they are used together in a key pair with a public key. The private or secret key is retained by the key's creator, making it highly secure.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term16"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>PKI</Term>
+      <Term>Public Key Infrastructure</Term>
+    </Terms>
+    <Definition
+      Link="">A public key infrastructure (PKI) is a set of roles, policies, and procedures needed to create, manage, distribute, use, store and revoke digital certificates and manage public-key encryption.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term18"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>PKCS#12</Term>
+      <Term>PFX</Term>
+      <Term>P12</Term>
+    </Terms>
+    <Definition
+      Link="">A PFX file (personal information exchange format), also known as a PKCS#12 archive, is a single, password-protected certificate archive that contains both the public and matching private key and, optionally, the certificate chain. It is a common format for Windows servers.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term19"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Parameter</Term>
+      <Term>Argument</Term>
+    </Terms>
+    <Definition
+      Link="">A parameter or argument is a value that is passed into a function in an application.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term20"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Orchestrator</Term>
+    </Terms>
+    <Definition
+      Link="">[%=General.CompanyName%] orchestrators perform a variety of functions, including managing certificate stores and SSH key stores.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term21"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>OID</Term>
+      <Term>Object Identifier</Term>
+    </Terms>
+    <Definition
+      Link="">Object identifiers or OIDs are a standardized system for identifying any object, concept, or "thing" with a globally unambiguous persistent name.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term22"
+    Stem=""
+    IgnoreCase="true"
+    TermClass="Popup">
+    <Terms>
+      <Term>Metadata</Term>
+    </Terms>
+    <Definition
+      Link="">Metadata provides information about a piece of data. It is used to summarize basic information about data, which can make working with the data easier. In the context of [%=General.ProductName%], the certificate metadata feature allows you to create custom metadata fields that allow you to tag certificates with tracking information about certificates.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term23"
+    Stem=""
+    IgnoreCase="true"
+    TermClass="Popup">
+    <Terms>
+      <Term>Logical Name</Term>
+    </Terms>
+    <Definition
+      Link="">The logical name of a CA is the common name given to the CA at the time it is created. For Microsoft CAs, this name can be seen at the top of the Certificate Authority MMC snap-in. It is part of the FQDN\Logical Name string that is used to refer to CAs when using command-line tools and in some [%=General.ProductName%] configuration settings (e.g.  ca2.keyexample.com\Corp Issuing CA Two).</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term24"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Java Keystore</Term>
+      <Term>Keystore</Term>
+      <Term>JKS</Term>
+    </Terms>
+    <Definition
+      Link="">A Java KeyStore (JKS) is a file containing security certificates with matching private keys. They are often used by Java-based applications for authentication and encryption.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term25"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Key Type</Term>
+    </Terms>
+    <Definition
+      Link="">The key type identifies the type of key to create when creating a symmetric or asymmetric key. It references the signing algorithm and often key size (e.g. AES-256, RSA-2048, Ed25519).</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term27"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Key Pair</Term>
+    </Terms>
+    <Definition
+      Link="">In asymmetric cryptography, public keys are used together in a key pair with a private key. The private key is retained by the key's creator while the public key is widely distributed to any user or target needing to interact with the holder of the private key.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term28"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Key Length</Term>
+      <Term>Key Size</Term>
+    </Terms>
+    <Definition
+      Link="">The key size or key length is the number of bits in a key used by a cryptographic algorithm.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term30"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Forest</Term>
+    </Terms>
+    <Definition
+      Link="">An Active Directory forest (AD forest) is the top most logical container in an Active Directory configuration that contains domains, and objects such as users and computers.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term31"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Enrollment</Term>
+    </Terms>
+    <Definition
+      Link="">Certificate enrollment refers to the process by which a user requests a digital certificate. The user must submit the request to a certificate authority (CA).</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term32"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Endpoint</Term>
+    </Terms>
+    <Definition
+      Link="">An endpoint is a URL that enables the API to gain access to resources on a server.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term33"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>ECC</Term>
+    </Terms>
+    <Definition
+      Link="">Elliptical curve cryptography (ECC) is a public key encryption technique based on elliptic curve theory that can be used to create faster, smaller, and more efficient cryptographic keys. ECC generates keys through the properties of the elliptic curve equation instead of the traditional method of generation as the product of very large prime numbers.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term34"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>DNS</Term>
+    </Terms>
+    <Definition
+      Link="">The Domain Name System is a service that translates names into IP addresses.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term36"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Distinquished Name</Term>
+      <Term>DN</Term>
+    </Terms>
+    <Definition
+      Link="">A distinguished name (DN) is the name that uniquely identifies an object in a directory. In the context of [%=General.ProductName%], this directory is generally Active Directory. A DN is made up of attribute=value pairs, separated by commas.  Any of the attributes defined in the directory schema can be used to make up a DN.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term38"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>CRL</Term>
+    </Terms>
+    <Definition
+      Link="">A Certificate Revocation List (CRL) is a list of digital certificates that have been revoked by the issuing Certificate Authority (CA) before their scheduled expiration date and should no longer be trusted.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term39"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Common Name</Term>
+      <Term>CN</Term>
+    </Terms>
+    <Definition
+      Link="">A common name (CN) is the component of a distinguished name (DN) that represents the primary name of the object. The value varies depending on the type of object. For a user object, this would be the user's name (e.g. CN=John Smith). For SSL certificates, the CN is typically the fully qualified domain name (FQDN) of the host where the SSL certificate will reside (e.g. servername.keyexample.com or www.keyexample.com).</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term40"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Collection</Term>
+    </Terms>
+    <Definition
+      Link="">The certificate search function allows you to query the [%=General.ProductName%] database for certificates from any available source based on any criteria of the certificates  and save the results as a collection that will be availble in other places in the Management Portal (e.g. expiration alerts and certain reports).</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term42"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Certificate Signing Request</Term>
+      <Term>CSR</Term>
+    </Terms>
+    <Definition
+      Link="">A CSR or certificate signing request is a block of encoded text that is submitted to a CA when enrolling for a certificate. When you generate a CSR within [%=General.ProductName%], the matching private key for it is stored in [%=General.ProductName%] in encrypted format and will be married with the certificate once returned from the CA.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term44"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Certificate Authority</Term>
+      <Term>CA</Term>
+    </Terms>
+    <Definition
+      Link="">A certificate authority (CA) is an entity that issues digital certificates. Within [%=General.ProductName%], a CA may be a Microsoft CA or a [%=General.CompanyName%] gateway to a cloud-based or remote CA.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term46"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Blueprint</Term>
+    </Terms>
+    <Definition
+      Link="">A snapshot of the certificate stores and scheduled jobs on one orchestrator, which can be used to create matching certificate stores and jobs on another orchestrator with just a few clicks.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term47"
+    Terms="Copy (5) of New"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>API</Term>
+      <Term>Web API</Term>
+    </Terms>
+    <Definition
+      Link="">A set of functions to allow creation of applications. [%=General.CompanyName%] offers the [%=General.CompanyName%] API, which allows third-party software to integrate with the advanced certificate enrollment and management features of [%=General.ProductName%].</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term48"
+    Stem=""
+    IgnoreCase="true"
+    TermClass="Popup">
+    <Terms>
+      <Term>Hostname</Term>
+      <Term>Host Name</Term>
+    </Terms>
+    <Definition
+      Link="">The unique identifier that serves as name of a computer. It is sometimes presented as a fully qualified domain name (e.g. servername.keyexample.com) and sometimes just as a short name (e.g. servername).</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term49"
+    Stem=""
+    IgnoreCase="true"
+    TermClass="Popup">
+    <Terms>
+      <Term>Windows Orchestrator</Term>
+    </Terms>
+    <Definition
+      Link="">The Windows Orchestrator, one of [%=General.CompanyName%]'s suite of orchestrators, is used to manage synchronization of certificate authorities in remote forests, run SSL discovery and management tasks, and interact with Windows servers as well as F5 devices, NetScaler devices, Amazon Web Services (AWS) resources, and FTP capable devices, for certificate management. In addition, the AnyAgent capability of the Windows Orchestrator allows it to be extended to create custom certificate store types and management capabilities regardless of source platform or location.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term50"
+    Stem=""
+    IgnoreCase="true"
+    TermClass="Popup">
+    <Terms>
+      <Term>Java Agent</Term>
+    </Terms>
+    <Definition
+      Link="">The Java Agent, one of [%=General.CompanyName%]'s suite of orchestrators,  is used to perform discovery of Java keystores and PEM certificate stores, to inventory discovered stores, and to push certificates out to stores as needed.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term51"
+    Stem=""
+    IgnoreCase="false"
+    TermClass="Popup">
+    <Terms>
+      <Term>PEM</Term>
+    </Terms>
+    <Definition
+      Link="">A PEM format certificate file is a base64-encoded certificate. Since it's presented in ASCII, you can open it in any text editor. PEM certificates always begin and end with entries like ---- BEGIN CERTIFICATE---- and ----END CERTIFICATE----. PEM certificates can contain a single certificate or a full certifiate chain and may contain a private key. Usually, extensions of .cer and .crt are certificate files with no private key, .key is a separate private key file, and .pem is both a certificate and private key.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term52"
+    Stem=""
+    IgnoreCase="false"
+    TermClass="Popup">
+    <Terms>
+      <Term>DER</Term>
+    </Terms>
+    <Definition
+      Link="">A DER format certificate file is a DER-encoded binary certificate. It contains a single certificate and does not support storage of private keys. It sometimes has an extension of .der but is often seen with .cer or .crt.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term53"
+    Stem=""
+    IgnoreCase="false"
+    TermClass="Popup">
+    <Terms>
+      <Term>PKCS #7</Term>
+      <Term>P7B</Term>
+      <Term>P7C</Term>
+    </Terms>
+    <Definition
+      Link="">A PKCS #7 format certificate file is a base64-encoded certificate. Since it's presented in ASCII, you can open it in any text editor. PKCS #7 certificates always begin and end with entries that look something like ---- BEGIN CERTIFICATE---- and ----END CERTIFICATE----. Unlike PEM files, PKCS #7 files can contain only a certificate and its certifiate chain but NOT its private key. Extensions of .p7b or .p7c are usually seen on certificate files of this format.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term1"
+    TermClass="Popup"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Rogue Key</Term>
+    </Terms>
+    <Definition
+      Link="">A rogue key, in the context of [%=General.ProductName%], is an SSH public key that appears in an authorized_keys file on a server managed by the SSH orchestrator without authorization.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term2"
+    TermClass="Popup"
+    IgnoreCase="false">
+    <Terms>
+      <Term>AnyAgent</Term>
+    </Terms>
+    <Definition
+      Link="">The AnyAgent, one of [%=General.CompanyName%]'s suite of orchestrators, is used to allow management of certificates regardless of source or location by allowing customers to implement custom agent functionality via an API.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term4"
+    TermClass="Popup"
+    IgnoreCase="false">
+    <Terms>
+      <Term>MAC Agent</Term>
+    </Terms>
+    <Definition
+      Link="">The MAC Agent, one of [%=General.CompanyName%]'s suite of orchestrators, is used to manage certificates on any keychains on the Mac on which the [%=General.CompanyName%] MAC Agent is installed.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term17"
+    TermClass="Popup"
+    IgnoreCase="false">
+    <Terms>
+      <Term>AnyGateway</Term>
+    </Terms>
+    <Definition
+      Link="">The [%=General.CompanyName%] AnyGateway is a generic third party CA gateway framework that allows existing CA gateways and custom CA connections to share the same overall product framework.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term6"
+    IgnoreCase="true"
+    TermClass="Popup"
+    Stem="">
+    <Terms>
+      <Term>Untrusted CA</Term>
+    </Terms>
+    <Definition
+      Link="">A certificate authority in a forest in a one-way trust with the forest in which [%=General.ProductName%] is installed or in a forest that is untrusted by the forest in which [%=General.ProductName%] is installed. Non-domain-joined standalone CAs also fall into this category.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Keyfactor.Term26"
+    IgnoreCase="true"
+    TermClass="Popup"
+    Stem="">
+    <Terms>
+      <Term>Trusted CA</Term>
+    </Terms>
+    <Definition
+      Link="">A certificate authority in the forest in which [%=General.ProductName%] is installed or in a forest in a two-way trust with the forest in which [%=General.ProductName%] is installed.</Definition>
+  </GlossaryEntry>
+</CatapultGlossary>
